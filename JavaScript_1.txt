@@ -1,0 +1,228 @@
+JavaScript:
+===========
+->JavaScript is a clientside scripting language.The main objective of JavaScript is to 
+develop the dynamic web applications as per the application reqn.
+
+
+->JavaScript is a Dynamically typed Scripting Language.
+
+->JavaScript is a Object based Scripting language.
+
+->JavaScript allow the features of OOPL.
+
+->JavaScript is a interpreter Scripting Language.
+
+->We can use HTML & HTML5 in JavaScript.HTML & HTML5 tags act as object in 
+JavaScript.
+
+
+Where can we use JavaScript in Real time application:
+=====================================================
+->To perform clientside validation
+->To develop dynamic dropdown menus
+->To work on dialog boxes
+->To display and date and time
+
+
+We can JavaScript code using three ways:
+========================================
+->JavaScript code can be return inside the body tag
+->JavaScript code can be return inside the Head tag
+->JavaScript code can be return as seperate file with .js extension
+
+
+->JavaScript code can be return inside the body tag:
+===================================================
+
+
+document.write():
+=================
+It is a method/function in JavaScript.The main objective of this method/function is
+to display the dynamice message on the web page.
+
+
+Ex1:
+===
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JavaScript_Session</title>
+</head>
+<body>
+    <script>
+        document.write("<h1><tt>Welcome to JavaScript.Please practice me to get the job as soon possible</tt></h1>")
+    </script>
+    
+</body>
+</html>
+
+
+->JavaScript code can be return inside the Head tag:
+====================================================
+
+Ex1:
+===
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JavaScript_Session</title>
+    <script>
+        document.write("<h1><tt>JavaScript Code inside the Head_Tag</tt></h1>")
+    </script>
+</head>
+<body>
+   
+    
+</body>
+</html>
+
+->JavaScript code can be return as seperate file with .js extension:
+===================================================================
+
+index1.html:
+=======
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JavaScript_Session</title>
+    <script src="index3.js"></script>
+   
+</head>
+<body>
+   
+    
+</body>
+</html>
+
+index1.js:
+=======
+document.write("<h1><tt>JavaScript Code with .js_file ...</tt></h1>")
+
+
+console.log():
+============
+It is a method/function in JavaScript.The main objective of this method is to perform
+debugging operation at client side.
+
+
+Ex1:
+==
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JavaScript_Session</title>
+   
+   
+</head>
+<body>
+    <script>
+        document.write("Hell world...")
+        console.log("Hell world ...")
+    </script>
+   
+    
+</body>
+</html>
+
+Hoe may ways we can define or declare a variable in JavaScript:
+===============================================================
+->using var keyword
+->using let keyword
+->using const keyword
+
+
+Ex1:
+===
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JavaScript_Session</title>
+   
+   
+</head>
+<body>
+    <script>
+        var a=1000 
+        var b=2000 
+        var res1=a+b 
+        document.write("Sum is:"+res1)
+        console.log("Sum is:"+res1)
+    </script>
+  
+   
+    
+</body>
+</html>
+
+
+Ex2:
+===
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JavaScript_Session</title>
+   
+   
+</head>
+<body>
+    <script>
+      var a =123
+      var b=127 
+      var res1=a+b 
+      console.log("Sum is:"+res1)
+    </script>
+  
+   
+    
+</body>
+</html>
+
+
+Ex3:
+===
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JavaScript_Session</title>
+   
+   
+</head>
+<body>
+    <script>
+        var Pid=1001 
+        let Eid=1001
+        const Cid=1001
+        document.write(Pid+" "+Eid+" "+Cid)
+        console.log(Pid+" "+Eid+" "+Cid)
+    
+    </script>
+  
+   
+    
+</body>
+</html>
+
+Dialog boxes in JavaScript:
+=================
+JavaScript supports Dialog boxes.The main objective of dialog boxes is to provide the
+intimation to the user.Following are the Dailog boxes in JavaScript
+
+->alert() or window.alert()
+->confirm() or window.confirm()
+->prompt() or window.prompt()
+
+
