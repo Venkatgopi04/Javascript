@@ -1,0 +1,440 @@
+Working on Date object in JavaScript:
+=====================================
+JavaScript supports Date object.We can define or declare date object as follows
+
+var d1 = new Date() --->Complete IST TIME on web page.
+
+
+Ex1:
+===
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JavaScript_Session</title>
+</head>
+<body>
+    <hr>
+    <center>
+        <h1><tt>JavaScript_Session</tt></h1>
+    </center>
+    <hr>
+    <script>
+        var d1 = new Date()
+        document.write(d1)
+    </script>
+    
+</body>
+</html>
+
+->getFullYear():It is used to display the full year in number format
+->getMonth():It is used to display the month in number format in 0 to 11 
+->getDay():It is used to dispaly the days in number format from 0 to 7
+->getHours():It is used to display  the hours in number format 0 to 23 
+->getMinutes():It is used to display the minutes in number from 0 to 59 
+->getSeconds():It is used to display the seconds in number format from 0 to 59
+
+
+Ex2:
+===
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JavaScript_Session</title>
+</head>
+<body>
+    <hr>
+    <center>
+        <h1><tt>JavaScript_Session</tt></h1>
+    </center>
+    <hr>
+    <script>
+        var d1 = new Date()
+        document.write("Current_Year is:"+d1.getFullYear())
+    </script>
+    
+</body>
+</html>
+
+
+Ex3:
+===
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JavaScript_Session</title>
+</head>
+<body>
+    <hr>
+    <center>
+        <h1><tt>JavaScript_Session</tt></h1>
+    </center>
+    <hr>
+    <script>
+        var d1 = new Date()
+        document.write("Current_Month is:"+d1.getMonth())
+    </script>
+    
+</body>
+</html>
+
+
+Ex4:
+===
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JavaScript_Session</title>
+</head>
+<body>
+    <hr>
+    <center>
+        <h1><tt>JavaScript_Session</tt></h1>
+    </center>
+    <hr>
+    <script>
+        var d1 = new Date()
+        document.write("Current_Day is:"+d1.getDay())
+    </script>
+    
+</body>
+</html>
+
+
+Ex5:
+==
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JavaScript_Session</title>
+</head>
+<body>
+    <hr>
+    <center>
+        <h1><tt>JavaScript_Session</tt></h1>
+    </center>
+    <hr>
+    <script>
+        var d1 = new Date()
+        document.write("Current_Hours are:"+d1.getHours())
+    </script>
+    
+</body>
+</html>
+
+
+Ex6:
+===
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JavaScript_Session</title>
+</head>
+<body>
+    <hr>
+    <center>
+        <h1><tt>JavaScript_Session</tt></h1>
+    </center>
+    <hr>
+    <script>
+        var d1 = new Date()
+        document.write("Current_Minutes are:"+d1.getMinutes())
+    </script>
+    
+</body>
+</html>
+
+
+Ex7:
+===
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JavaScript_Session</title>
+</head>
+<body>
+    <hr>
+    <center>
+        <h1><tt>JavaScript_Session</tt></h1>
+    </center>
+    <hr>
+    <script>
+        var d1 = new Date()
+        document.write("Current_Seconds are:"+d1.getSeconds())
+    </script>
+    
+</body>
+</html>
+
+
+Ex8:
+===
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JavaScript_Session</title>
+</head>
+<body>
+    <fieldset>
+        <legend>Date_Object</legend>
+        <center>
+            <form action="" method="post">
+                <table>
+                    <tr>
+                        <td><input type="submit" value="Year" onclick="T1()"></td>
+                        <td><input type="submit" value="Month" onclick="T2()"></td>
+                        <td><input type="submit" value="Day" onclick="T3()"></td>
+                        <td><input type="submit" value="Hour" onclick="T4()"></td>
+                        <td><input type="submit" value="Minute" onclick="T5()"></td>
+                        <td><input type="submit" value="Seconds" onclick="T6()"></td>
+                
+                </tr>
+            
+                </table>
+            </form>
+        </center>
+    </fieldset>
+    <script>
+        function T1()
+        {
+            var d1 = new Date()
+            window.alert("Current_Year is:"+d1.getFullYear())
+        }
+        function T2()
+        {
+            var d2 = new Date()
+            window.alert("Current_Month is:"+d2.getMonth())
+        }
+        function  T3()
+        {
+            var d3 = new Date()
+            window.alert("Current_Day is:"+d3.getDay())
+        }
+        function T4()
+        {
+            var d4 = new Date()
+            window.alert("Current_Hour is:"+d4.getHours())
+        }
+        function T5()
+        {
+            var d5 = new Date()
+            window.alert("Current_Hour is:"+d5.getMinutes())
+        }
+        function T6()
+        {
+            var d6 = new Date()
+            window.alert("Current_Hour is:"+d6.getSeconds())
+        }
+    </script>
+  
+    
+</body>
+</html>
+
+
+***High order functions in JavaScript***:
+=========================================
+JavaScript supports High order functions. Following are the High order functions
+in JavaScript
+
+->filter()
+->map()
+->reduce()
+
+
+->filter():
+===========
+It is a predefine function/method in JavaScript. The main objective of filter() is to filter
+the data/information as per the application reqn.Filter() function is application with nameless
+function and arrow function
+
+
+Ex1:
+==
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JavaScript_Session</title>
+</head>
+<body>
+    <hr>
+    <center>
+        <h1><tt>High Order Functions</tt></h1>
+    </center>
+    <hr>
+    <script>
+        var Array_data=[111,112,113,114,115,116,117]
+        var res1=Array_data.filter(function(X1){
+            if(X1%2==0)
+        {
+            return X1
+        }
+        })
+        document.write("The result_set is:"+res1)
+    </script>
+    
+    
+</body>
+</html>
+
+
+Ex2:
+====
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JavaScript_Session</title>
+</head>
+<body>
+    <hr>
+    <center>
+        <h1><tt>High Order Functions</tt></h1>
+    </center>
+    <hr>
+    <script>
+        var Array_data=[111,112,113,114,115,116,117,118,119,120]
+        var res2=Array_data.filter(X1=>X1%2==0)
+        document.write("The result_set is:"+res2)
+      
+        
+    </script>
+    
+    
+</body>
+</html>
+
+
+->map():
+========
+It is a predefine function/method in JavaScript.The main objective of map() function is take each
+elements from array and perform some operations and store into another array.map() function is
+applicable for name_less function and arrow function in JavaScript.
+
+
+Ex1:
+===
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JavaScript_Session</title>
+</head>
+<body>
+    <hr>
+    <center>
+        <h1><tt>High Order Functions</tt></h1>
+    </center>
+    <hr>
+    <script>
+        var Array_data=[111,112,113,114,115,116,117,118,119,120]
+        var res3=Array_data.map(function(X2){
+            return X2*7
+        })
+        document.write("The result_set is:"+res3)
+       
+        
+    </script>
+    
+    
+</body>
+</html>
+
+
+Ex2:
+====
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JavaScript_Session</title>
+</head>
+<body>
+    <hr>
+    <center>
+        <h1><tt>High Order Functions</tt></h1>
+    </center>
+    <hr>
+    <script>
+        var Array_data=[111,112,113,114,115,116,117,118,119,120,121]
+        var res4 =Array_data.map(Y1=>Y1*7)
+        document.write("The result_set is:"+res4)
+       
+       
+        
+    </script>
+    
+    
+</body>
+</html>
+
+
+->reduce():
+===========
+It is a prefine function/method in JavaScript.The main objective of reduce() is to combine
+the multiple elements into single entity.reduce() is applicable with name_less and
+arrow function.
+
+
+Ex1:
+==
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JavaScript_Session</title>
+</head>
+<body>
+    <hr>
+    <center>
+        <h1><tt>High Order Functions</tt></h1>
+    </center>
+    <hr>
+    <script>
+        var Array_data=[111,112,113,114,115,116,117,118,119,120,121]
+        var res7=Array_data.reduce(function(X1,X2)
+    {
+        return X1+X2 
+    })
+    document.write("Sum of Array_data is:"+res7)
+
+        
+       
+       
+        
+    </script>
+    
+    
+</body>
+</html>
+
+
+
+
+
+
+
+
+
+

@@ -1,0 +1,448 @@
+->pop():
+=======
+         It is a method/function in JavaScript.The main objective of pop() function is to 
+remove last element of an array.
+
+Ex1:
+===
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JavaScript_Session</title>
+</head>
+<body>
+<hr>
+<center>
+    <h1><tt>JavaScript_Session</tt></h1>
+</center>
+<hr>
+<script>
+    var Product_Prices=[120,150,190,210,223,225]
+    document.write("Before_Operations:"+Product_Prices)
+    document.write("<hr>")
+    Product_Prices.pop()
+    document.write("After_Operations:"+Product_Prices)
+</script>
+    
+</body>
+</html>
+
+
+Ex2:
+==
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JavaScript_Session</title>
+</head>
+<body>
+<hr>
+<center>
+    <h1><tt>JavaScript_Session</tt></h1>
+</center>
+<hr>
+<script>
+    var Product_Prices=[120,150,190,210,223,225,229]
+    document.write("Before_Operations:"+Product_Prices)
+    document.write("<hr>")
+    Product_Prices.pop(0)
+    document.write("After_Operations:"+Product_Prices)
+</script>
+    
+</body>
+</html>
+
+
+->An object data type:
+======================
+JavaScript supports An object data type.It can be define or declare using following ways
+
+->Using an object literal
+->Using an instance of Object 
+->Using an object constructor
+
+
+->Using an object literal:
+==========================
+
+Ex1:
+===
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JavaScript_Session</title>
+</head>
+<body>
+<hr>
+<center>
+    <h1><tt>JavaScript_Session</tt></h1>
+</center>
+<hr>
+<script>
+
+    var Product_Detials ={
+
+        "Pid":1001,
+        "Pname":"Mobile_1",
+        "Price":23000.0,
+        "Company":"Samsung",
+        "M_date":"12/12/2024",
+        "Exp_date":"12/12/2026"
+    }
+    document.write(Product_Detials.Pid+" "+Product_Detials.Pname+" "+Product_Detials.Price+" "+Product_Detials.Company+" "+Product_Detials.M_date+" "+Product_Detials.Exp_date)
+
+</script>
+    
+</body>
+</html>
+
+
+->Using an instance of object :
+====================
+
+Ex1:
+===
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JavaScript_Session</title>
+</head>
+<body>
+<hr>
+<center>
+    <h1><tt>JavaScript_Session</tt></h1>
+</center>
+<hr>
+<script>
+
+var Employee_Details = new Object()
+Employee_Details.Eid=1001 
+Employee_Details.Ename="Rahul"
+Employee_Details.Esal=29000 
+Employee_Details.Company="HCL"
+document.write(Employee_Details.Eid+"<hr>")
+document.write(Employee_Details.Ename+"<hr>")
+document.write(Employee_Details.Esal+"<hr>")
+document.write(Employee_Details.Company+"<hr>")
+
+</script>
+    
+</body>
+</html>
+
+
+->Using an object constructor:
+===================
+
+Ex1:
+===
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JavaScript_Session</title>
+</head>
+<body>
+<hr>
+<center>
+    <h1><tt>JavaScript_Session</tt></h1>
+</center>
+<hr>
+<script>
+    function Products(Pid,Pname,Price)
+    {
+        this.Pid=Pid 
+        this.Pname=Pname 
+        this.Price=Price
+    }
+    var  p1 = new Products(1001,"Mobile_1",21000)
+    document.write("Pid is:"+p1.Pid+"<hr>")
+    document.write("Pname is:"+p1.Pname+"<hr>")
+    document.write("Price is:"+p1.Price+"<hr>")
+
+
+
+
+</script>
+    
+</body>
+</html>
+
+
+JavaScript can be used as a functional scripting language:
+===================================
+
+Ex1:
+===
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JavaScript_Session</title>
+</head>
+<body>
+<hr>
+<center>
+    <h1><tt>JavaScript_Session</tt></h1>
+</center>
+<hr>
+<script>
+    function Test_Case1()
+    {
+        document.write("This is a function in JS"+"<hr>")
+    }
+    Test_Case1()
+</script>
+    
+</body>
+</html>
+
+
+Ex2:
+===
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JavaScript_Session</title>
+</head>
+<body>
+<hr>
+<center>
+    <h1><tt>JavaScript_Session</tt></h1>
+</center>
+<hr>
+<script>
+    function Test_Case1()
+    {
+        document.write("This is a function in JS"+"<hr>")
+    }
+    Test_Case1()
+    Test_Case1()
+    Test_Case1()
+
+</script>
+    
+</body>
+</html>
+
+
+Ex3:
+===
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JavaScript_Session</title>
+</head>
+<body>
+<hr>
+<center>
+    <h1><tt>JavaScript_Session</tt></h1>
+</center>
+<hr>
+<script>
+    function Customer_Details(Cid,Cname,Mobile_Number,Email)
+    {
+        document.write("----Customer_Details------")
+        document.write("<hr>")
+        document.write("Cid is:"+Cid)
+        document.write("<hr>")
+        document.write("Cname is:"+Cname)
+        document.write("<hr>")
+        document.write("Mobile_Number is:"+Mobile_Number)
+        document.write("<hr>")
+        document.write("Email is:"+Email)
+
+    }
+    Customer_Details(1001,"Rahul_1","+91-9090123123","rahul_1@gmail.com")
+  
+
+</script>
+    
+</body>
+</html>
+
+Ex4:
+==
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JavaScript_Session</title>
+</head>
+<body>
+<hr>
+<center>
+    <h1><tt>JavaScript_Session</tt></h1>
+</center>
+<hr>
+<script>
+    function Customer_Details(Cname,Mobile_Number,Email,Cid=1001)
+    {
+        document.write("----Customer_Details------")
+        document.write("<hr>")
+        document.write("Cid is:"+Cid)
+        document.write("<hr>")
+        document.write("Cname is:"+Cname)
+        document.write("<hr>")
+        document.write("Mobile_Number is:"+Mobile_Number)
+        document.write("<hr>")
+        document.write("Email is:"+Email)
+
+    }
+    Customer_Details("Rahul_1","+91-9090123123","rahul_1@gmail.com")
+  
+
+</script>
+    
+</body>
+</html>
+
+Working with return keyword in JavaScript:
+===========================
+
+Ex1:
+===
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JavaScript_Session</title>
+</head>
+<body>
+<hr>
+<center>
+    <h1><tt>JavaScript_Session</tt></h1>
+</center>
+<hr>
+<script>
+    function Test_Case1()
+    {
+        return "How r u my dear students"
+    }
+    document.write(Test_Case1())
+</script>
+
+
+
+    
+</body>
+</html>
+
+
+Ex2:
+===
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JavaScript_Session</title>
+</head>
+<body>
+<hr>
+<center>
+    <h1><tt>JavaScript_Session</tt></h1>
+</center>
+<hr>
+<script>
+    function Add(X1,X2)
+    {
+        return X1+X2 
+    }
+    document.write("Sum is:"+Add(1000,2000))
+  
+</script>
+
+
+
+    
+</body>
+</html>
+
+
+Ex3:
+===
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JavaScript_Session</title>
+</head>
+<body>
+<hr>
+<center>
+    <h1><tt>JavaScript_Session</tt></h1>
+</center>
+<hr>
+<script>
+    function Test_Case1(X1,X2=10)
+    {
+        return X1*X2
+    }
+    document.write("Mul is :"+Test_Case1(20))
+   
+  
+</script>
+
+
+
+    
+</body>
+</html>
+
+
+Ex4:
+===
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JavaScript_Session</title>
+</head>
+<body>
+<hr>
+<center>
+    <h1><tt>JavaScript_Session</tt></h1>
+</center>
+<hr>
+<script>
+    function Test_Case1(X1,X2=10)
+    {
+        return X1*X2
+    }
+    document.write("Mul is :"+Test_Case1(20,40))
+   
+  
+</script>
+
+
+
+    
+</body>
+</html>
+
+
+Rest Parameter in JavaScript(...):
+==================
+JavaScript supports Rest Parameters which can be define or declare as ... followed
+variable name.The main objective of rest parameter is to read zero or more than 
+one number of argument and perform operations.
+

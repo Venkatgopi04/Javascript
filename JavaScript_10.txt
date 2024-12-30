@@ -1,0 +1,213 @@
+Creating the regex object for Mobile Number:
+============================================
+6/7/8/9 ---->It must be contains 10 digit 
+
+9090123123 ---->[6-9]\d{9}
+
+Ex1:
+==
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JavaScri[pt_Session</title>
+</head>
+<body>
+    <hr>
+   
+    <center>
+        <h1><tt>JavaScript_Session</tt></h1>
+    </center>
+    <hr>
+    <br>
+    <script>
+        var Mobile_Number=window.prompt("Enter the Mobile_Number")
+        var obj1=Mobile_Number.match(/[6-9]\d{9}/g)
+        if(obj1!=null)
+    {
+        document.write(Mobile_Number+" "+": It is mobile_number")
+        document.write("<hr>")
+    }
+    else 
+    {
+        document.write(Mobile_Number+" "+" : It is in_valid_mobile_number")
+        document.write("<hr>")
+    }
+    </script>
+    
+</body>
+</html>
+
+
+Creating the regex object for Indian_Mobile_Number:
+==================================================
++91-9090123123  ---->[+]{1}[9]{1}[1]{1}-[6-9]\d{9}
+
+
+Ex1:
+===
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JavaScri[pt_Session</title>
+</head>
+<body>
+    <hr>
+   
+    <center>
+        <h1><tt>JavaScript_Session</tt></h1>
+    </center>
+    <hr>
+    <br>
+    <script>
+        var Mobile_Number=window.prompt("Enter the Indina Mobile_Number")
+        var obj1=Mobile_Number.match(/[+]{1}[9]{1}[1]{1}-[6-9]\d{9}/g)
+        if(obj1!=null)
+    {
+        document.write(Mobile_Number+" "+": It is indian_mobile_number")
+        document.write("<hr>")
+    }
+    else 
+    {
+        document.write(Mobile_Number+" "+" : It is in_valid_indian_mobile_number")
+        document.write("<hr>")
+    }
+    </script>
+    
+</body>
+</html>
+
+
+Regex object for gmail_acount:
+=============================
+abc_ABC_12345@gmail.com ---->\w[A-Za-z0-9._]*@gmail[.]com
+
+
+Ex1:
+==
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JavaScri[pt_Session</title>
+</head>
+<body>
+    <hr>
+   
+    <center>
+        <h1><tt>JavaScript_Session</tt></h1>
+    </center>
+    <hr>
+    <br>
+    <script>
+        var Email=window.prompt("Enter the Gmail_Account:")
+        var obj1=Email.match(/\w[A-Za-z0-9._]*@gmail[.]com/g)
+        if(obj1!=null)
+    {
+        document.write(Email+" "+": It is valid_gmail_account")
+        document.write("<hr>")
+    }
+    else 
+    {
+        document.write(Email+" "+": In_valid_gmail_acount")
+        document.write("<hr>")
+    }
+
+    </script>
+    
+</body>
+</html>
+
+
+Regex object for email_account:
+===============================
+gmail or yahoo or rediff or qualitythought or ramanasoft 
+
+\w[A-Za-z0-9._]*@(gmail|yahoo|rediff|[a-z]*)[.]com
+
+
+Ex1:
+==
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JavaScri[pt_Session</title>
+</head>
+<body>
+    <hr>
+   
+    <center>
+        <h1><tt>JavaScript_Session</tt></h1>
+    </center>
+    <hr>
+    <br>
+    <script>
+        var Email=window.prompt("Enter the Email_Account:")
+        var obj1=Email.match(/\w[A-Za-z0-9._]*@(gmail|yahoo|rediff|[a-z]*)[.]com/g)
+        if(obj1!=null)
+    {
+        document.write(Email+" "+": It is valid_Email_account")
+        document.write("<hr>")
+    }
+    else 
+    {
+        document.write(Email+" "+": In_valid_Email_acount")
+        document.write("<hr>")
+    }
+
+    </script>
+    
+</body>
+</html>
+
+
+Ex2:
+===
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JavaScri[pt_Session</title>
+</head>
+<body>
+    <hr>
+   
+    <center>
+        <h1><tt>JavaScript_Session</tt></h1>
+    </center>
+    <hr>
+    <br>
+    <script>
+        var Email=window.prompt("Enter the Email_Account:")
+        var obj1=Email.match(/\w[A-Za-z0-9._]*@(gmail|yahoo|rediff|[a-z]*)([.]com|[.]co[.]in|[.]in|[.]net)/g)
+        if(obj1!=null)
+    {
+        document.write(Email+" "+": It is valid_Email_account")
+        document.write("<hr>")
+    }
+    else 
+    {
+        document.write(Email+" "+": In_valid_Email_acount")
+        document.write("<hr>")
+    }
+
+    </script>
+    
+</body>
+</html>
+
+
+TG A12 
+B 12345
+
+AP  A 12 
+B    12345
+
+

@@ -1,0 +1,516 @@
+*****Call back function in JavaScript****:
+===========================================
+
+->JavaScript supports Call back Function.Call back function can be represent as
+a function can be used as a parameter to another function to provide the additional
+functionality.In JavaScript we do have two types of call back function
+
+->Synchronous Call back function
+->Asynchronous Call back function
+
+
+->Synchronous Call back function:
+=================================
+
+Ex1:
+===
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JavaScript_Session</title>
+</head>
+<body>
+    <hr>
+    <center>
+        <h1><tt>JavaScript_Session</tt></h1>
+    </center>
+    <hr>
+    <script>
+        function Test_Case1(name,callback)
+        {
+          document.write("Language_Name is:"+name)
+          document.write("<hr>")
+          callback()
+        }
+        function Test_Case2()
+        {
+            document.write("This is Test_Case2_function")
+            document.write("<hr>")
+        }
+        Test_Case1("JavaScript",Test_Case2)
+
+    </script>
+    
+</body>
+</html>
+
+->Asynchronous Call back function:
+==================================
+
+Ex1:
+===
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JavaScript_Session</title>
+</head>
+<body>
+    <hr>
+    <center>
+        <h1><tt>JavaScript_Session</tt></h1>
+    </center>
+    <hr>
+    <script>
+        function Test_Case1()
+        {
+            console.log("This is Test_Case1_ Function")
+        }
+        function Test_Case2(name)
+        {
+            console.log("Name of the language is:"+name)
+        }
+        setTimeout(Test_Case1,5000)
+        Test_Case2("JavaScript")
+       
+
+    </script>
+    
+</body>
+</html>
+
+
+->****Promises in JavaScript****:
+=================================
+JavaScript supports Promises.Promises are Object in JavaScript which is used to 
+perform asychronous operations.
+
+
+
+Ex1:
+==
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JavaScript_Session</title>
+</head>
+<body>
+    <hr>
+    <center>
+        <h1><tt>JavaScript_Session</tt></h1>
+    </center>
+    <hr>
+    <script>
+        var obj1 = new Promise(function(resolve,reject){
+            var a=1000+4000 
+            if(a==3000)
+        {
+            resolve("Promise is executed successfully ...")
+        }
+        else 
+        {
+            reject("Promise is reject successfully ...")
+        }
+        })
+        obj1.then(function(fromResolve){
+            document.write("Promise is:"+fromResolve)
+        }).catch(function(fromReject){
+            document.write("Promise is:"+fromReject)
+        })
+
+   
+
+    </script>
+    
+</body>
+</html>
+
+
+OOPL in JavaScript:
+=====================
+
+
+What is a class?
+=========
+class is a template,blueprint,design
+
+How to create a class in JavaScript?
+=====================
+We can create a class in JavaScript using class keyword followed by class_name.
+
+
+What is an Object?
+============
+An object is a Physical exitance of class.
+
+
+How to create an Object?
+================
+We can an object in JavaScript using new keyword
+
+class Quality_Thought  -----> Class_Name
+{
+  ---
+}
+var q1 = new Quality_Thought() ----> An Object_Creation
+
+
+Types of construcrtor in JavaScript:
+======================
+In JavaScript constructor can be define or declare using constructor keyword.We
+do have two types for constructor
+
+->Non parameterized constructor
+->Parameterized construtor
+
+
+
+->Non parameterized constructor:
+======================
+
+Ex1:
+===
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JavaScript_Session</title>
+</head>
+<body>
+    <hr>
+    <center>
+        <h1><tt>JavaScript_Session</tt></h1>
+    </center>
+    <hr>
+    <script>
+        class Test_Case1
+        {
+            constructor()
+            {
+                document.write("This is Non_Parameterized constructor")
+                document.write("<hr>")
+            }
+        }
+        var t1 = new Test_Case1()
+
+    </script>
+    
+</body>
+</html>
+
+
+->Parameterized construtor:
+==================
+
+Ex1:
+==
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JavaScript_Session</title>
+</head>
+<body>
+    <hr>
+    <center>
+        <h1><tt>JavaScript_Session</tt></h1>
+    </center>
+    <hr>
+    <script>
+        class Test_Case2
+        {
+            constructor(Eid,Ename,Esal,Company)
+            {
+                 this.Eid = Eid 
+                 this.Ename=Ename 
+                 this.Esal=Esal 
+                 this.Company=Company
+            }
+        }
+        var t1  = new Test_Case2(1001,"Rahul",22000.,"HCL")
+        document.write(t1.Eid+" "+t1.Ename+" "+t1.Esal+" "+t1.Company)
+      
+
+    </script>
+    
+</body>
+</html>
+
+
+Non static method:
+============
+JavaScript support Non static method.The main objective of Non static method is to 
+write the business logic.Non static method can be define or declare with any_name.
+
+
+Ex1:
+==
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JavaScript_Session</title>
+</head>
+<body>
+    <hr>
+    <center>
+        <h1><tt>JavaScript_Session</tt></h1>
+    </center>
+    <hr>
+    <script>
+        class Customer_Details 
+        {
+            constructor(Cid,Cname,Pname,Address)
+            {
+                this.Cid=Cid 
+                this.Cname=Cname 
+                this.Pname=Pname 
+                this.Address=Address 
+            }
+            m1()
+            {
+                document.write(this.Cid+" "+this.Cname+" "+this.Pname+" "+this.Address)
+                document.write("<hr>")
+            }
+        }
+      var c1 = new Customer_Details(1001,"Rahul_1","Laptop_1","Hyderabad")
+         c1.m1()
+
+      
+
+    </script>
+    
+</body>
+</html>
+
+
+->Static method in JavaScript:
+==============================
+->JavaScript supports Static method.Static method can be define or declare using 
+static keyword followed method_name.
+
+->Static method can be access using class_name.
+
+->We can access Static method inside the constructor and inside the non static 
+method.
+
+
+Ex1:
+==
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JavaScript_Session</title>
+</head>
+<body>
+    <hr>
+    <center>
+        <h1><tt>JavaScript_Session</tt></h1>
+    </center>
+    <hr>
+    <script>
+        class Test_Case1
+        {
+            static m1()
+            {
+                return "This is Static method in JS"
+            }
+        }
+        var t1 = new Test_Case1() 
+        document.write(Test_Case1.m1())
+
+    </script>
+    
+</body>
+</html>
+
+
+Ex2:
+===
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JavaScript_Session</title>
+</head>
+<body>
+    <hr>
+    <center>
+        <h1><tt>JavaScript_Session</tt></h1>
+    </center>
+    <hr>
+    <script>
+        class Test_Case1
+        {
+            static m1()
+            {
+                return "This is Static method_1 in JS"
+            }
+            static m2()
+            {
+               return "This is Static method_2 in JS"
+            }
+            static m3()
+            {
+                return "This is Static method_3 in JS" 
+            }
+        }
+        var t1 = new Test_Case1() 
+        document.write(Test_Case1.m1())
+        document.write("<hr>")
+        document.write(Test_Case1.m2())
+        document.write("<hr>")
+        document.write(Test_Case1.m3())
+        document.write("<hr>")
+
+    </script>
+    
+</body>
+</html>
+
+
+Ex3:
+===
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JavaScript_Session</title>
+</head>
+<body>
+    <hr>
+    <center>
+        <h1><tt>JavaScript_Session</tt></h1>
+    </center>
+    <hr>
+    <script>
+        class Test_Case1
+        {
+            static m1()
+            {
+                return "This is Static method_1 in JS"
+            }
+            static m1()
+            {
+               return "This is Static method_2 in JS"
+            }
+            static m1()
+            {
+                return "This is Static method_3 in JS" 
+            }
+        }
+        var t1 = new Test_Case1() 
+        document.write(Test_Case1.m1())
+        document.write("<hr>")
+       
+
+    </script>
+    
+</body>
+</html>
+
+
+Ex4:
+===
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JavaScript_Session</title>
+</head>
+<body>
+    <hr>
+    <center>
+        <h1><tt>JavaScript_Session</tt></h1>
+    </center>
+    <hr>
+    <script>
+        class Test_Case1
+        {
+            constructor()
+            {
+                document.write(this.constructor.m1())
+                document.write("<hr>")
+                document.write(Test_Case1.m1())
+            }
+            static m1()
+            {
+                return "This is Static method_1 in JS"
+            }
+           
+        }
+        var t1 = new Test_Case1()
+      
+       
+
+    </script>
+    
+</body>
+</html>
+
+
+Ex5:
+===
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JavaScript_Session</title>
+</head>
+<body>
+    <hr>
+    <center>
+        <h1><tt>JavaScript_Session</tt></h1>
+    </center>
+    <hr>
+    <script>
+        class Test_Case1
+        {
+           s1()
+           {
+            document.write(Test_Case1.m1())
+           }
+            static m1()
+            {
+                return "This is Static method_1 in JS"
+            }
+           
+        }
+        var t1 = new Test_Case1()
+        t1.s1()
+      
+       
+
+    </script>
+    
+</body>
+</html>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

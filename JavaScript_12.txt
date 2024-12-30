@@ -1,0 +1,261 @@
+Client Side Validation in JavaScript:
+====================================
+JavaScript supports Client Side Validation.It is process or methodlogy to provide the
+intimation to the end_user wheather end_user details are valid or in_valid.
+
+
+Simple client side validation:
+==============================
+
+Ex1:
+===
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JavaScript_Session</title>
+    <style>
+        span 
+        {
+            background-color: black;
+            color:white;
+            text-align:center;
+            font-family:monospace;
+            font-size:18px;
+        }
+    </style>
+</head>
+<body>
+
+    <hr>
+    <center>
+        <h1><tt>Welcome to User_Login</tt></h1>
+    </center>
+    <hr>
+    <br>
+    <fieldset>
+        <legend>User_Login</legend>
+        <center>
+            <form action="" method="post" onsubmit="return Test_Case1()">
+                <table border="3">
+                    <tr>
+                        <td><label for="">Username</label></td>
+                        <td><input type="text" placeholder="Username" id="A" autocomplete="off"></td>
+                        <td><span id="ABC"></span></td>
+                    </tr>
+                    <tr>
+                        <td><label for="">Password</label></td>
+                        <td><input type="password" placeholder="Password" id="B" autocomplete="off"></td>
+                        <td><span id="XYZ"></span></td>
+                    </tr>
+                    <tr>
+                        <td></td>
+                        <td><input type="submit" value="LOGIN"></td>
+                    </tr>
+
+                </table>
+
+            </form>
+        </center>
+    </fieldset>
+
+    <script>
+        function Test_Case1()
+        {
+            var username=document.getElementById("A").value 
+            var password=document.getElementById("B").value
+            if(username=="" || username==null)
+        {
+            window.alert("Username is requured ...")
+            document.getElementById("ABC").innerHTML="*** Username is Required ***"
+            return false
+        }
+        else if(password=="" || password==null)
+        {
+            window.alert("Password is required")
+            document.getElementById("XYZ").innerHTML="*** Password is required ***"
+            return false
+        }
+        }
+    </script>
+    
+</body>
+</html>
+
+
+Real world client side validation:
+==================================
+Username ---->User_12345  ---->[A-Z]{1}[a-z]*[_]{1}[0-9]{5}
+Password ---->U_123456789 --->[A-Z]{1}[_]{1}[0-9]{9}
+
+
+Ex1:
+==
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JavaScript_Session</title>
+    <style>
+        span 
+        {
+            background-color:red;
+            color:white;
+            text-align:center;
+            font-family:monospace;
+            font-size:18px;
+        }
+    </style>
+</head>
+<body>
+
+    <hr>
+    <center>
+        <h1><tt>Welcome to User_Login</tt></h1>
+    </center>
+    <hr>
+    <br>
+    <fieldset>
+        <legend>User_Login</legend>
+        <center>
+            <form action="" method="post" onsubmit="return Test_Case1()">
+                <table border="3">
+                    <tr>
+                        <td><label for="">Username</label></td>
+                        <td><input type="text" placeholder="Username" id="A" autocomplete="off"></td>
+                        <td><span id="ABC"></span></td>
+                    </tr>
+                    <tr>
+                        <td><label for="">Password</label></td>
+                        <td><input type="password" placeholder="Password" id="B" autocomplete="off"></td>
+                        <td><span id="XYZ"></span></td>
+                    </tr>
+                    <tr>
+                        <td></td>
+                        <td><input type="submit" value="LOGIN"></td>
+                    </tr>
+
+                </table>
+
+            </form>
+        </center>
+    </fieldset>
+
+    <script>
+        function Test_Case1()
+        {
+           var username=document.getElementById("A").value 
+           var password=document.getElementById("B").value
+           var res1=username.match(/[A-Z]{1}[a-z]*[_]{1}[0-9]{5}/g)
+           var res2=password.match(/[A-Z]{1}[_]{1}[0-9]{9}/g)
+           
+           if(username=="" || password==null)
+           {
+            window.alert("Username is required")
+            document.getElementById("ABC").innerHTML="*** Username is Required ***"
+            return false
+           }
+           else if(res1==""||res1==null)
+           {
+            window.alert("In_valid_username")
+            document.getElementById("ABC").innerHTML=username+" "+":In valid username Ex:User_12345"
+            return false
+           }
+           if(password==""||password==null)
+           {
+            window.alert("Password is required")
+            document.getElementById("XYZ").innerHTML="*** Password is required ***"
+            return false
+           }
+           else if(res2=="" || res2==null)
+           {
+            window.alert("In_valid password")
+            document.getElementById("XYZ").innerHTML=password+" "+": In_valid_password Ex:U_123456789"
+            return false
+           }
+
+      
+        }
+    </script>
+    
+</body>
+</html>
+
+
+
+Radio button validation in JavaScript:
+======================================
+Ex1:
+===
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JavaScript_Session</title>
+    <style>
+        span 
+        {
+            background-color:red;
+            color:white;
+            text-align:center;
+            font-family:monospace;
+            font-size:18px;
+        }
+    </style>
+</head>
+<body>
+
+    <hr>
+    <center>
+        <h1><tt>Welcome to User_Login</tt></h1>
+    </center>
+    <hr>
+    <br>
+    <fieldset>
+        <legend>User_Login</legend>
+        <center>
+            <form action="" method="post" onsubmit="return Test_Case1()">
+                <table border="3">
+                    <tr>
+                        <td><label for="">Gender</label></td>
+                        <td><input type="radio" name="gender" value="male"><label for="">MALE</label>
+                            <input type="radio" name="gender" value="female"><label for="">FEMALE</label>
+                        </td>
+                        <td><span id="ABC"></span></td>
+                    </tr>
+                    <tr>
+                        <td></td>
+                        <td><input type="submit" value="SUBMIT"></td>
+                    </tr>
+                   
+                       
+                </table>
+
+            </form>
+        </center>
+    </fieldset>
+
+    <script>
+        function Test_Case1()
+        {
+            var my_gender=document.getElementsByName("gender")
+            if(my_gender[0].checked==false && my_gender[1].checked==false)
+        {
+            window.alert("Dear Customer please select the gender")
+            document.getElementById("ABC").innerHTML="*** Dear Customer please select the gender ***"
+            return false
+        }
+        }
+    </script>
+
+ 
+    
+</body>
+</html>
+
+        
+
+

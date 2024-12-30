@@ -1,0 +1,391 @@
+if- else if -else:
+=================
+JavaScript supports if-else if-else block.The main objective of if-else if else block is to
+check more than one condition as per the application reqn.
+
+if(condition)
+{
+---
+}
+else if(condition)
+{
+---
+}
+else if(condition)
+{
+}
+else 
+{
+}
+
+
+Ex1:
+===
+<!DOCTYPE html>
+<html lang="en">
+<head>
+   <meta charset="UTF-8">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <title>JavaScript_Session</title>
+</head>
+<body>
+   <hr>
+   <center>
+      <h1><tt>JavaScript_Session</tt></h1>
+   </center>
+   <hr>
+   <script>
+      var tech_1=window.prompt("Enter the Technologies:")
+      if(tech_1=="JavaScript")
+   {
+      document.write(tech_1+" "+": Meant for client_side validation"+"<hr>")
+   }
+   else if(tech_1=="Angular")
+   {
+      document.write(tech_1+" "+": Meant Single application development"+"<hr>")
+   }
+   else if(tech_1=="ReactJS")
+   {
+      document.write(tech_1+" "+": Meant UI components in SPA application"+"<hr>")
+   }
+   else 
+   {
+      document.write(tech_1+" "+" : Enter the proper technology"+"<hr>")
+   }
+   </script>
+   
+</body>
+</html>
+
+
+for loop:
+=====
+JavaScript supports for loop.If you want to execute number of statements number of 
+times if our data/information is in sequence then wen can go with for loop.
+
+
+Ex1:
+===
+<!DOCTYPE html>
+<html lang="en">
+<head>
+   <meta charset="UTF-8">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <title>JavaScript_Session</title>
+</head>
+<body>
+   <hr>
+   <center>
+      <h1><tt>JavaScript_Session</tt></h1>
+   </center>
+   <hr>
+   <script>
+      for(var a=0;a<10;a++)
+   {
+      document.write(a+"<hr>")
+   }
+ 
+   </script>
+   
+</body>
+</html>
+
+
+Ex2:
+===
+<!DOCTYPE html>
+<html lang="en">
+<head>
+   <meta charset="UTF-8">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <title>JavaScript_Session</title>
+</head>
+<body>
+   <hr>
+   <center>
+      <h1><tt>JavaScript_Session</tt></h1>
+   </center>
+   <hr>
+   <script>
+      var Customer_Ages=[21,22,23,24,25,26]
+      for(var a=0;a<Customer_Ages.length;a++)
+   {
+      document.write(a+"<hr>")
+   }
+   
+ 
+   </script>
+   
+</body>
+</html>
+
+Ex3:
+===
+<!DOCTYPE html>
+<html lang="en">
+<head>
+   <meta charset="UTF-8">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <title>JavaScript_Session</title>
+</head>
+<body>
+   <hr>
+   <center>
+      <h1><tt>JavaScript_Session</tt></h1>
+   </center>
+   <hr>
+   <script>
+      var Customer_Ages=[21,22,23,24,25,26]
+      for(var a=0;a<Customer_Ages.length;a++)
+   {
+      document.write(Customer_Ages[a]+"<hr>")
+   }
+   
+ 
+   </script>
+   
+</body>
+</html>
+
+Ex3:
+===
+<!DOCTYPE html>
+<html lang="en">
+<head>
+   <meta charset="UTF-8">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <title>JavaScript_Session</title>
+</head>
+<body>
+   <hr>
+   <center>
+      <h1><tt>JavaScript_Session</tt></h1>
+   </center>
+   <hr>
+   <script>
+      var Customer_Ages=[21,22,23,24,25,26]
+      for(var a=0;a<Customer_Ages.length;a++)
+   {
+      document.write(a+"===="+Customer_Ages[a]+"<hr>")
+   }
+   
+ 
+   </script>
+   
+</body>
+</html>
+
+
+Ex4:
+===
+<!DOCTYPE html>
+<html lang="en">
+<head>
+   <meta charset="UTF-8">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <title>JavaScript_Session</title>
+</head>
+<body>
+   <hr>
+   <center>
+      <h1><tt>JavaScript_Session</tt></h1>
+   </center>
+   <hr>
+   <script>
+      var Product_Prices=[1001,2000,1199,2100,2300]
+      A1=0 
+      for(var a=0;a<Product_Prices.length;a++)
+   {
+      A1=A1+a
+   }
+   document.write("The result_set is:"+A1)
+   
+    
+ 
+   
+ 
+   </script>
+   
+</body>
+</html>
+
+
+Ex5:
+===
+<!DOCTYPE html>
+<html lang="en">
+<head>
+   <meta charset="UTF-8">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <title>JavaScript_Session</title>
+</head>
+<body>
+   <hr>
+   <center>
+      <h1><tt>JavaScript_Session</tt></h1>
+   </center>
+   <hr>
+   <script>
+      var Product_Prices=[1001,2000,1199,2100,2300]
+      A1=0 
+      for(var a=0;a<Product_Prices.length;a++)
+   {
+      A1=A1+Product_Prices[a]
+   }
+   document.write("The result_set is:"+A1)
+   
+    
+ 
+   
+ 
+   </script>
+   
+</body>
+</html>
+
+
+Ex6:
+===
+<!DOCTYPE html>
+<html lang="en">
+<head>
+   <meta charset="UTF-8">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <title>JavaScript_Session</title>
+</head>
+<body>
+   <hr>
+   <center>
+      <h1><tt>JavaScript_Session</tt></h1>
+   </center>
+   <hr>
+   <script>
+      var Product_Prices=[1001,2000,1199,2100,2300]
+      for (var b=0;b<Product_Prices.length;b++)
+   {
+      if(Product_Prices[b]%2==0)
+   {
+      document.write("The result_set is:"+Product_Prices[b])
+      document.write("<hr>")
+   }
+   }
+    
+    
+ 
+   
+ 
+   </script>
+   
+</body>
+</html>
+
+
+Ex7:
+===
+<!DOCTYPE html>
+<html lang="en">
+<head>
+   <meta charset="UTF-8">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <title>JavaScript_Session</title>
+</head>
+<body>
+   <hr>
+   <center>
+      <h1><tt>JavaScript_Session</tt></h1>
+   </center>
+   <hr>
+   <script>
+      var str1=window.prompt("Enter the string_object:")
+      var str2=""
+      for(var a=0;a<str1.length;a++)
+   {
+      str2=str1[a]+str2
+   }
+   document.write(str1+" "+str2)
+
+    
+    
+ 
+   
+ 
+   </script>
+   
+</body>
+</html>
+
+
+Ex8:
+===
+<!DOCTYPE html>
+<html lang="en">
+<head>
+   <meta charset="UTF-8">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <title>JavaScript_Session</title>
+</head>
+<body>
+   <hr>
+   <center>
+      <h1><tt>JavaScript_Session</tt></h1>
+   </center>
+   <hr>
+   <script>
+      var str1=window.prompt("Enter the string_object:")
+      var str2=""
+      for(var a=0;a<str1.length;a++)
+   {
+      str2=str1[a]+str2
+   }
+   if(str1==str2)
+   {
+      document.write(str1+" "+str2+": Palindrom_Object"+"<hr>")
+   
+   }
+   else 
+   {
+      document.write(str1+" "+str2+": Not a palindrom_Object"+"<hr>")
+   }
+
+    
+    
+ 
+   
+ 
+   </script>
+   
+</body>
+</html>
+
+
+Ex9:
+===
+<!DOCTYPE html>
+<html lang="en">
+<head>
+   <meta charset="UTF-8">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <title>JavaScript_Session</title>
+</head>
+<body>
+   <hr>
+   <center>
+      <h1><tt>JavaScript_Session</tt></h1>
+   </center>
+   <hr>
+   <script>
+      var Number=Number(window.prompt("Enter a number:"))
+      for(var a=1;a<=10;a++)
+   {
+      document.write(Number+" "+"X"+" "+a+"="+Number*a+" "+"<hr>")
+   }
+    
+    
+    
+ 
+   
+ 
+   </script>
+   
+</body>
+</html>

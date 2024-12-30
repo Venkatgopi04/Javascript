@@ -1,0 +1,267 @@
+Dialog boxes in JavaScript:
+===========================
+JavaScript supports Dialog boxes.The main objective of Dialog boxes is to provide the
+intimation to the end_user as per the application reqn.Following are the Dailog box in 
+JavaScript which are as follows
+
+->alert() or window.alert()
+->confirm() or window.confirm()
+->prompt() or window.prompt()
+
+
+Note:
+====
+Dialog boxes are entery point in every web application
+
+
+->alert() or window.alert():
+==========================
+It is a dailog box in JavaScript.The main objective of this dailog box is to provide the
+intimation of end_user using a box with okay button
+
+
+Ex1:
+===
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JavaScript_Session</title>
+</head>
+<body>
+    <fieldset>
+        <legend>JavaScript</legend>
+        <center>
+            <h1><tt>JavaScript_Session</tt></h1>
+        </center>
+    </fieldset>
+    <script>
+        alert("Welcome to Diallog_boxes in JavaScript")
+    </script>
+    
+</body>
+</html>
+
+
+
+Ex2:
+===
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JavaScript_Session</title>
+</head>
+<body>
+    <fieldset>
+        <legend>JavaScript</legend>
+        <center>
+            <h1><tt>JavaScript_Session</tt></h1>
+        </center>
+    </fieldset>
+    <script>
+        window.alert("Welcome to Diallog_boxes in JavaScript")
+    </script>
+    
+</body>
+</html>
+
+
+Ex3:
+===
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JavaScript_Session</title>
+</head>
+<body>
+    <fieldset>
+        <legend>JavaScript</legend>
+        <center>
+            <h1><tt>JavaScript_Session</tt></h1>
+        </center>
+    </fieldset>
+    <script>
+        window.alert("Welcome to Diallog_boxes in JavaScript")
+        console.log("Welcome to Dialog_boxes  in JavaScript")
+        document.write("Welcome to Dialog_boxes in JavaScript")
+    </script>
+    
+</body>
+</html>
+
+
+->confirm() or window.confirm():
+===============================
+It is a dialog box in JavaScript. The main objective of this dialog box is to provide the
+intimation to the end-user with a dialog with okay and cancel button.
+
+
+Ex1:
+===
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JavaScript_Session</title>
+</head>
+<body>
+    <fieldset>
+        <legend>JavaScript</legend>
+        <center>
+            <h1><tt>JavaScript_Session</tt></h1>
+        </center>
+    </fieldset>
+    <script>
+     var data_1=window.confirm("Do you want to continue next_operation:{YES|NO}")
+     window.alert("The result_set is:"+data_1)
+
+
+    </script>
+    
+</body>
+</html>
+
+
+->prompt() or window.prompt():
+============================
+It is a dailog box in JavaScript.The main objective of this dailog is read the dynamically
+value from the keyboard.
+
+
+Ex1:
+===
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JavaScript_Session</title>
+</head>
+<body>
+    <fieldset>
+        <legend>JavaScript</legend>
+        <center>
+            <h1><tt>JavaScript_Session</tt></h1>
+        </center>
+    </fieldset>
+    <script>
+        var X1=window.prompt("Enter the value of X1:")
+        document.write("X1_value is:"+X1)
+        document.write("<hr>")
+        document.write("The data type is:"+typeof(X1))
+    
+
+
+    </script>
+    
+</body>
+</html>
+
+Typecasting:
+===========
+JavaScript supports Typecasting.The main objective of  Typecasting is to convert from 
+one data type to another data type using predefine functions/methods
+
+->parseInt()
+->parseFloat()
+->Number()
+
+
+Ex1:
+===
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JavaScript_Session</title>
+</head>
+<body>
+    <fieldset>
+        <legend>JavaScript</legend>
+        <center>
+            <h1><tt>JavaScript_Session</tt></h1>
+        </center>
+    </fieldset>
+    <script>
+        var X1=parseInt(window.prompt("Enter the value of X1:"))
+        var X2=parseInt(window.prompt("Enter the value of X2:"))
+        var res1=X1+X2 
+        document.write("The result_set is:"+res1)
+        
+    
+
+
+    </script>
+    
+</body>
+</html>
+
+Ex2:
+==
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JavaScript_Session</title>
+</head>
+<body>
+    <fieldset>
+        <legend>JavaScript</legend>
+        <center>
+            <h1><tt>JavaScript_Session</tt></h1>
+        </center>
+    </fieldset>
+    <script>
+        var X1=parseFloat(window.prompt("Enter the value of X1:"))
+        var X2=parseFloat(window.prompt("Enter the value of X2:"))
+        var res1=X1+X2 
+        document.write("The result_set is:"+res1)
+        
+    
+
+
+    </script>
+    
+</body>
+</html>
+
+
+Ex3:
+===
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JavaScript_Session</title>
+</head>
+<body>
+    <fieldset>
+        <legend>JavaScript</legend>
+        <center>
+            <h1><tt>JavaScript_Session</tt></h1>
+        </center>
+    </fieldset>
+    <script>
+        var X1=Number(window.prompt("Enter the value of X1:"))
+        var X2=Number(window.prompt("Enter the value of X2:"))
+        var res1=X1+X2 
+        document.write("The result_set is:"+res1)
+        
+    
+
+
+    </script>
+    
+</body>
+</html>
+
+

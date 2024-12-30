@@ -1,0 +1,491 @@
+do while loop in JavaScript:
+============================
+JavaScript supports do while loop.The main objective of do while loop first execute the
+statements later check the condition as per the application reqn.
+
+a=0 
+do 
+{
+   ---
+  a++
+}while(condition)
+
+
+Ex1:
+==
+<!DOCTYPE html>
+<html lang="en">
+<head>
+   <meta charset="UTF-8">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <title>JavaScript_Session</title>
+   
+ 
+   
+</head>
+<body>
+   <hr>
+   <center>
+      <h1><tt>JavaScript_Session</tt></h1>
+   </center>
+   <hr>
+   <script>
+      var a=0 
+      do 
+      {
+         document.write(a+"<hr>")
+         a++
+         
+      }while(a<=7)
+   </script>
+   
+</body>
+</html>
+
+
+Nested while loop(Inner while loop):
+=======================
+JavaScript supports Nested while loop/Inner while loop.Inner while or nested while
+loop can be represent as if we define or declare a while loop inside another while loop 
+then it is said to be Nested while loop.
+
+
+a=0 
+while(condition)
+{
+    ---
+      b=0 
+      while(condition)
+      {
+          ---
+          b++
+      }
+     a++
+}
+
+Ex1:
+===
+<!DOCTYPE html>
+<html lang="en">
+<head>
+   <meta charset="UTF-8">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <title>JavaScript_Session</title>
+   
+ 
+   
+</head>
+<body>
+   <hr>
+   <center>
+      <h1><tt>JavaScript_Session</tt></h1>
+   </center>
+   <hr>
+   <script>
+      a=0
+      while(a<3)
+   {
+      document.write(a+"<hr>")
+      b=0 
+      while(b<3)
+   {
+      document.write(b+"<hr>")
+      b++
+   }
+   a++
+   }
+
+
+break statement:
+===========
+JavaScript supports break statement.The main objective of break statement is to
+control the loops or to terminate the script as per the application reqn.
+
+
+Ex1:
+===
+<!DOCTYPE html>
+<html lang="en">
+<head>
+   <meta charset="UTF-8">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <title>JavaScript_Session</title>
+   
+ 
+   
+</head>
+<body>
+   <hr>
+   <center>
+      <h1><tt>JavaScript_Session</tt></h1>
+   </center>
+   <hr>
+   <script>
+      var Product_Price=[121,190,131,167,10000,12,16,19,211]
+      for(var a=0;a<Product_Price.length;a++)
+   {
+      if(Product_Price[a]>9999)
+   {
+      document.write("Welcome to IHUB_APP_STORE"+"<hr>")
+      break
+   }
+   document.write("The processing_values are:"+Product_Price[a]+"<hr>")
+   }
+
+  
+  
+
+     
+   
+  
+
+ 
+   </script>
+   
+</body>
+</html>
+
+
+Ex2:
+===
+<!DOCTYPE html>
+<html lang="en">
+<head>
+   <meta charset="UTF-8">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <title>JavaScript_Session</title>
+   
+ 
+   
+</head>
+<body>
+   <hr>
+   <center>
+      <h1><tt>JavaScript_Session</tt></h1>
+   </center>
+   <hr>
+   <script>
+      for (var a=0;a<10;a++)
+   {
+      if(a==6)
+   {
+      document.write("Tommorow is sunday ...."+"<hr>")
+      break
+   }
+   document.write("The processing values are:"+a+"<hr>")
+   }
+  
+  
+
+     
+   
+  
+
+ 
+   </script>
+   
+</body>
+</html>
+
+->continue:
+========
+JavaScript supports continue statement.The main objective of continue statement is to 
+skip the current iteration and continue for next iteration even if the condition is satisfied
+
+Ex1:
+===
+<!DOCTYPE html>
+<html lang="en">
+<head>
+   <meta charset="UTF-8">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <title>JavaScript_Session</title>
+   
+ 
+   
+</head>
+<body>
+   <hr>
+   <center>
+      <h1><tt>JavaScript_Session</tt></h1>
+   </center>
+   <hr>
+   <script>
+      var Product_Price=[121,190,131,167,10000,12,16,19,211]
+      for(var a=0;a<Product_Price.length;a++)
+   {
+      if(Product_Price[a]>9999)
+   {
+      document.write("Welcome to IHUB_APP_STORE"+"<hr>")
+      continue
+   }
+   document.write("The processing_values are:"+Product_Price[a]+"<hr>")
+   }
+
+  
+  
+
+     
+   
+  
+
+ 
+   </script>
+
+   
+</body>
+</html>
+  
+  
+
+     
+   
+  
+
+ 
+   </script>
+   
+</body>
+</html>
+
+
+Ex2:
+===
+<!DOCTYPE html>
+<html lang="en">
+<head>
+   <meta charset="UTF-8">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <title>JavaScript_Session</title>
+   
+ 
+   
+</head>
+<body>
+   <hr>
+   <center>
+      <h1><tt>JavaScript_Session</tt></h1>
+   </center>
+   <hr>
+   <script>
+      for(var a=1;a<15;a++)
+   {
+      if(a%2==0)
+   {
+      continue
+   }
+   else 
+   {
+      document.write(a+"<hr>")
+   }
+   }
+
+  
+  
+
+     
+   
+  
+
+ 
+   </script>
+
+   
+</body>
+</html>
+
+
+Working with switch statement:
+====================
+JavaScript supports Switch statement.The main objective of switch statement is to 
+check one or more than one condition.
+
+
+switch(varibale_name)
+{
+       ----  
+        break
+}
+
+
+Ex1:
+===
+<!DOCTYPE html>
+<html lang="en">
+<head>
+   <meta charset="UTF-8">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <title>JavaScript_Session</title>
+   
+ 
+   
+</head>
+<body>
+   <hr>
+   <center>
+      <h1><tt>JavaScript_Session</tt></h1>
+   </center>
+   <hr>
+   <script>
+       var data_1=window.prompt("Enter the grade_system:")
+       switch(data_1)
+       {
+         case 'A':
+            document.write("You passed in first_class"+"<hr>")
+            break
+         case 'B': 
+             document.write("You passed in second_class"+"<hr>")
+             break
+         case 'C': 
+              document.write("You passed in third_class"+"<hr>")
+              break 
+         default:
+              document.write("Enter the proper_grade"+"<hr>")
+             
+       }
+  
+   
+  
+
+ 
+   </script>
+
+   
+</body>
+</html>
+
+->An operators in JavaScript:
+=============================
+JavaScript supports an operators.Following operators are supported in javascript.
+
+->Arithmetic operators --->+,*,/,%,++,--,-,**
+->Assignment operators ---->a+=b --->a=a+b 
+->logical operators  ----->&& || !
+->Comparision operators ---->>,>=,<,<=,!=,==,===
+->Ternary operator ----> ? 
+->Bitwise operartors --->
+                                      bitwise and operator ---> &
+                                      bitwise or operator  ----> | 
+                                      bitwise exlusive or  ---> ^ 
+                                      bitwise left_shift  ---> <<
+                                      bitwise rigth_shift ----> >>
+
+
+What is the difference between == and === operators 
+
+== operator is meant for content comparision
+=== operator is meant for data type compaision
+
+
+Ex1:
+===
+<!DOCTYPE html>
+<html lang="en">
+<head>
+   <meta charset="UTF-8">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <title>JavaScript_Session</title>
+   
+ 
+   
+</head>
+<body>
+   <hr>
+   <center>
+      <h1><tt>JavaScript_Session</tt></h1>
+   </center>
+   <hr>
+   <script>
+      var number_1=Number(window.prompt("Enter the number:"))
+      var number_2=Number(window.prompt("Enter the number:"))
+      res1=number_1==number_2 
+      document.write("The result_set is:"+res1)
+      document.write("<hr>")
+      document.write("Data type is:"+typeof(res1))
+     
+     
+
+ 
+   </script>
+
+   
+</body>
+</html>
+
+
+Ex2:
+===
+<!DOCTYPE html>
+<html lang="en">
+<head>
+   <meta charset="UTF-8">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <title>JavaScript_Session</title>
+   
+ 
+   
+</head>
+<body>
+   <hr>
+   <center>
+      <h1><tt>JavaScript_Session</tt></h1>
+   </center>
+   <hr>
+   <script>
+      var number_1=Number(window.prompt("Enter the number:"))
+      var number_2=window.prompt("Enter the number:")
+      res1=number_1===number_2 
+      document.write("The result_set is:"+res1)
+      document.write("<hr>")
+      document.write("Data type is:"+typeof(res1))
+     
+     
+
+ 
+   </script>
+
+   
+</body>
+</html>
+
+
+Ex3:
+==
+<!DOCTYPE html>
+<html lang="en">
+<head>
+   <meta charset="UTF-8">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <title>JavaScript_Session</title>
+   
+ 
+   
+</head>
+<body>
+   <hr>
+   <center>
+      <h1><tt>JavaScript_Session</tt></h1>
+   </center>
+   <hr>
+   <script>
+      var number_1=Number(window.prompt("Enter the number:"))
+      var number_2=Number(window.prompt("Enter the number:"))
+      res1=number_1===number_2 
+      document.write("The result_set is:"+res1)
+      document.write("<hr>")
+      document.write("Data type is:"+typeof(res1))
+     
+     
+
+ 
+   </script>
+
+   
+</body>
+</html>
+
+
+
+
+
+

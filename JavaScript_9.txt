@@ -1,0 +1,712 @@
+Regex object data type in JavaScript:
+=====================================
+JavaScript supports regex object data type.If you want to represent group of string as
+a pattern what you are searching for then we can go with regex object data type in JavaScript
+
+//i or g
+
+i means case sensitive & case insensitive as well only once
+
+g globally only case sensitive more than one time
+
+
+->match()
+->search()
+
+
+->match():
+========
+It is a predefine function in JavaScript.The main objective of match() function is to match and
+return the pattern as per the application reqn.
+
+
+->search():
+==========
+It is a predefine function in JavaScript.The main objective of search() is to return the 
+indexing position of the pattern.
+
+
+Ex1:
+===
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JavaScript</title>
+</head>
+<body>
+    <hr>
+        <center>
+            <h1><tt>JavaScript_Session</tt></h1>
+        </center>
+    <hr>
+    <br>
+    <script>
+        var str1=window.prompt("Enter the pattern:")
+        var obj1=str1.match(/javascript/i)
+        if(obj1!=null)
+    {
+        document.write(obj1+" "+": Pattern is there")
+    }
+    else 
+    {
+        document.write(obj1+" "+":Pattern is not there")
+    }
+    </script>
+    
+</body>
+</html>
+
+
+Ex2:
+===
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JavaScript</title>
+</head>
+<body>
+    <hr>
+        <center>
+            <h1><tt>JavaScript_Session</tt></h1>
+        </center>
+    <hr>
+    <br>
+    <script>
+        var str1=window.prompt("Enter the pattern:")
+        var obj1=str1.match(/javascript/g)
+        if(obj1!=null)
+    {
+        document.write(obj1+" "+": Pattern is there")
+    }
+    else 
+    {
+        document.write(obj1+" "+":Pattern is not there")
+    }
+    </script>
+    
+</body>
+</html>
+
+Ex3:
+===
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JavaScript</title>
+</head>
+<body>
+    <hr>
+        <center>
+            <h1><tt>JavaScript_Session</tt></h1>
+        </center>
+    <hr>
+    <br>
+    <script>
+        var str1=window.prompt("Enter the pattern:")
+        var obj1=str1.search(/javascript/g)
+        if(obj1!=null)
+    {
+        document.write(obj1+" "+": Pattern is there")
+    }
+    else 
+    {
+        document.write(obj1+" "+":Pattern is not there")
+    }
+    </script>
+    
+</body>
+</html>
+
+Characters classes:
+===================
+[ABC] ---->A or B or C
+[A-Z] -----> All uppercase AtoZ 
+[a-z]  ---->All lowercase atoz
+[0-9] ---->only digits
+[a-zA-Z] ---->Both uppercase and lowercase
+[a-zA-Z0-9] ---->Alpha numerical values
+[^a-zA-Z0-9] ---->Only specail characters
+
+Ex1:
+===
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JavaScript</title>
+</head>
+<body>
+    <hr>
+        <center>
+            <h1><tt>JavaScript_Session</tt></h1>
+        </center>
+    <hr>
+    <br>
+    <script>
+        var str1=window.prompt("Enter the pattern:")
+        var obj1=str1.match(/[ABC]/g)
+        if(obj1!=null)
+    {
+        document.write(obj1+" "+": Pattern is there")
+    }
+    else 
+    {
+        document.write(obj1+" "+":Pattern is not there")
+    }
+    </script>
+    
+</body>
+</html>
+
+
+Ex2:
+===
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JavaScript</title>
+</head>
+<body>
+    <hr>
+        <center>
+            <h1><tt>JavaScript_Session</tt></h1>
+        </center>
+    <hr>
+    <br>
+    <script>
+        var str1=window.prompt("Enter the pattern:")
+        var obj1=str1.match(/[a-z]/g)
+        if(obj1!=null)
+    {
+        document.write(obj1+" "+": Pattern is there")
+    }
+    else 
+    {
+        document.write(obj1+" "+":Pattern is not there")
+    }
+    </script>
+    
+</body>
+</html>
+
+
+Ex3:
+===
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JavaScript</title>
+</head>
+<body>
+    <hr>
+        <center>
+            <h1><tt>JavaScript_Session</tt></h1>
+        </center>
+    <hr>
+    <br>
+    <script>
+        var str1=window.prompt("Enter the pattern:")
+        var obj1=str1.match(/[0-9]/g)
+        if(obj1!=null)
+    {
+        document.write(obj1+" "+": Pattern is there")
+    }
+    else 
+    {
+        document.write(obj1+" "+":Pattern is not there")
+    }
+    </script>
+    
+</body>
+</html>
+
+Ex4:
+==
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JavaScript</title>
+</head>
+<body>
+    <hr>
+        <center>
+            <h1><tt>JavaScript_Session</tt></h1>
+        </center>
+    <hr>
+    <br>
+    <script>
+        var str1=window.prompt("Enter the pattern:")
+        var obj1=str1.match(/[a-zA-Z0-9]/g)
+        if(obj1!=null)
+    {
+        document.write(obj1+" "+": Pattern is there")
+    }
+    else 
+    {
+        document.write(obj1+" "+":Pattern is not there")
+    }
+    </script>
+    
+</body>
+</html>
+
+
+Ex5:
+===
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JavaScript</title>
+</head>
+<body>
+    <hr>
+        <center>
+            <h1><tt>JavaScript_Session</tt></h1>
+        </center>
+    <hr>
+    <br>
+    <script>
+        var str1=window.prompt("Enter the pattern:")
+        var obj1=str1.match(/[^a-zA-Z0-9]/g)
+        if(obj1!=null)
+    {
+        document.write(obj1+" "+": Pattern is there")
+    }
+    else 
+    {
+        document.write(obj1+" "+":Pattern is not there")
+    }
+    </script>
+    
+</body>
+</html>
+
+
+->Predefine classes in JavaScript:
+=================================
+\S ---->Except spaces
+\s ---->Only spaces
+\d ---->Only digits
+\D  ---->Except digits
+\w ---->Alpha numerical values including _
+\W ---->Only special characters
+
+Ex1:
+===
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JavaScript</title>
+</head>
+<body>
+    <hr>
+        <center>
+            <h1><tt>JavaScript_Session</tt></h1>
+        </center>
+    <hr>
+    <br>
+    <script>
+        var str1=window.prompt("Enter the pattern:")
+        var obj1=str1.match(/\S/g)
+        if(obj1!=null)
+    {
+        document.write(obj1+" "+": Pattern is there")
+    }
+    else 
+    {
+        document.write(obj1+" "+":Pattern is not there")
+    }
+    </script>
+    
+</body>
+</html>
+
+
+Ex2:
+===
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JavaScript</title>
+</head>
+<body>
+    <hr>
+        <center>
+            <h1><tt>JavaScript_Session</tt></h1>
+        </center>
+    <hr>
+    <br>
+    <script>
+        var str1=window.prompt("Enter the pattern:")
+        var obj1=str1.match(/\s/g)
+        if(obj1!=null)
+    {
+        document.write(obj1+" "+": Pattern is there")
+    }
+    else 
+    {
+        document.write(obj1+" "+":Pattern is not there")
+    }
+    </script>
+    
+</body>
+</html>
+
+
+Ex3:
+===
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JavaScript</title>
+</head>
+<body>
+    <hr>
+        <center>
+            <h1><tt>JavaScript_Session</tt></h1>
+        </center>
+    <hr>
+    <br>
+    <script>
+        var str1=window.prompt("Enter the pattern:")
+        var obj1=str1.match(/\d/g)
+        if(obj1!=null)
+    {
+        document.write(obj1+" "+": Pattern is there")
+    }
+    else 
+    {
+        document.write(obj1+" "+":Pattern is not there")
+    }
+    </script>
+    
+</body>
+</html>
+
+Ex4:
+===
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JavaScript</title>
+</head>
+<body>
+    <hr>
+        <center>
+            <h1><tt>JavaScript_Session</tt></h1>
+        </center>
+    <hr>
+    <br>
+    <script>
+        var str1=window.prompt("Enter the pattern:")
+        var obj1=str1.match(/\w/g)
+        if(obj1!=null)
+    {
+        document.write(obj1+" "+": Pattern is there")
+    }
+    else 
+    {
+        document.write(obj1+" "+":Pattern is not there")
+    }
+    </script>
+    
+</body>
+</html>
+
+
+Ex5:
+===
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JavaScript</title>
+</head>
+<body>
+    <hr>
+        <center>
+            <h1><tt>JavaScript_Session</tt></h1>
+        </center>
+    <hr>
+    <br>
+    <script>
+        var str1=window.prompt("Enter the pattern:")
+        var obj1=str1.match(/\W/g)
+        if(obj1!=null)
+    {
+        document.write(obj1+" "+": Pattern is there")
+    }
+    else 
+    {
+        document.write(obj1+" "+":Pattern is not there")
+    }
+    </script>
+    
+</body>
+</html>
+
+
+Quantifiers in JavaScript:
+==========================
+A ----> only A's
+A+ ----->Minimum one A's and more than one A's
+A* ---->Minimum one A's and more than one A's and zero number of A's and end+1
+A? ---->Minimum one A's and zero number of A's and end+1 
+A{2,3} --->AA,AAA 
+^A ---->Wheather our pattern starts with A or not 
+A$ ---> Wheather our pattern ends with A or not
+
+
+Ex1:
+==
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JavaScript</title>
+</head>
+<body>
+    <hr>
+        <center>
+            <h1><tt>JavaScript_Session</tt></h1>
+        </center>
+    <hr>
+    <br>
+    <script>
+        var str1=window.prompt("Enter the pattern:")
+        var obj1=str1.match(/A/g)
+        if(obj1!=null)
+    {
+        document.write(obj1+" "+": Pattern is there")
+    }
+    else 
+    {
+        document.write(obj1+" "+":Pattern is not there")
+    }
+    </script>
+    
+</body>
+</html>
+
+
+Ex2:
+===
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JavaScript</title>
+</head>
+<body>
+    <hr>
+        <center>
+            <h1><tt>JavaScript_Session</tt></h1>
+        </center>
+    <hr>
+    <br>
+    <script>
+        var str1=window.prompt("Enter the pattern:")
+        var obj1=str1.match(/A+/g)
+        if(obj1!=null)
+    {
+        document.write(obj1+" "+": Pattern is there")
+    }
+    else 
+    {
+        document.write(obj1+" "+":Pattern is not there")
+    }
+    </script>
+    
+</body>
+</html>
+
+
+Ex3:
+===
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JavaScript</title>
+</head>
+<body>
+    <hr>
+        <center>
+            <h1><tt>JavaScript_Session</tt></h1>
+        </center>
+    <hr>
+    <br>
+    <script>
+        var str1=window.prompt("Enter the pattern:")
+        var obj1=str1.match(/A*/g)
+        if(obj1!=null)
+    {
+        document.write(obj1+" "+": Pattern is there")
+    }
+    else 
+    {
+        document.write(obj1+" "+":Pattern is not there")
+    }
+    </script>
+    
+</body>
+</html>
+
+
+Ex4:
+==
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JavaScript</title>
+</head>
+<body>
+    <hr>
+        <center>
+            <h1><tt>JavaScript_Session</tt></h1>
+        </center>
+    <hr>
+    <br>
+    <script>
+        var str1=window.prompt("Enter the pattern:")
+        var obj1=str1.match(/A?/g)
+        if(obj1!=null)
+    {
+        document.write(obj1+" "+": Pattern is there")
+    }
+    else 
+    {
+        document.write(obj1+" "+":Pattern is not there")
+    }
+    </script>
+    
+</body>
+</html>
+
+
+Ex5:
+===
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JavaScript</title>
+</head>
+<body>
+    <hr>
+        <center>
+            <h1><tt>JavaScript_Session</tt></h1>
+        </center>
+    <hr>
+    <br>
+    <script>
+        var str1=window.prompt("Enter the pattern:")
+        var obj1=str1.match(/A{2,3}/g)
+        if(obj1!=null)
+    {
+        document.write(obj1+" "+": Pattern is there")
+    }
+    else 
+    {
+        document.write(obj1+" "+":Pattern is not there")
+    }
+    </script>
+    
+</body>
+</html>
+
+
+Ex6:
+===
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JavaScript</title>
+</head>
+<body>
+    <hr>
+        <center>
+            <h1><tt>JavaScript_Session</tt></h1>
+        </center>
+    <hr>
+    <br>
+    <script>
+        var str1=window.prompt("Enter the pattern:")
+        var obj1=str1.match(/^A/g)
+        if(obj1!=null)
+    {
+        document.write(str1+" "+": Our pattern starts with A")
+    }
+    else 
+    {
+        document.write(str1+" "+":Our pattern not starts with A")
+    }
+    </script>
+    
+</body>
+</html>
+
+
+Ex7:
+===
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JavaScript</title>
+</head>
+<body>
+    <hr>
+        <center>
+            <h1><tt>JavaScript_Session</tt></h1>
+        </center>
+    <hr>
+    <br>
+    <script>
+        var str1=window.prompt("Enter the pattern:")
+        var obj1=str1.match(/A$/g)
+        if(obj1!=null)
+    {
+        document.write(str1+" "+": Our pattern ends with A")
+    }
+    else 
+    {
+        document.write(str1+" "+":Our pattern not ends with A")
+    }
+    </script>
+    
+</body>
+</html>

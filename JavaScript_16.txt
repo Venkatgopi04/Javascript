@@ -1,0 +1,375 @@
+Inheritance in JavaScript:
+================
+JavaScript supports Inheritance.It is the process or methodlogy to extend from 
+one class to another class.In JavaScript we can extends the class using extends
+keywords.Following types of Inheritance in JavaScript
+
+->Single Inheritance.
+->Multilevel Inheritance.
+->Hiechical Inheritance.
+
+
+->Single Inheritance:
+==============
+
+Ex1:
+===
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JavaScript_Session</title>
+</head>
+<body>
+    <hr>
+    <center>
+        <h1><tt>JavaScript_Session</tt></h1>
+    </center>
+    <hr>
+    <br>
+    <script>
+        class Test_Case1
+        {
+            m1()
+            {
+                document.write("This is Parent_Class")
+                document.write("<hr>")
+            }
+        }
+        class Test_Case2 extends Test_Case1 
+        {
+            m2()
+            {
+                document.write("This is Child_Class")
+                document.write("<hr>")
+            }
+        }
+        var t1 = new Test_Case1()
+        t1.m1()
+        var t2 = new Test_Case2()
+        t2.m1()
+        t2.m2()
+    </script>
+    
+</body>
+</html>
+
+->Multilevel Inheritance.
+=================
+
+Ex1:
+==
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JavaScript_Session</title>
+</head>
+<body>
+    <hr>
+    <center>
+        <h1><tt>JavaScript_Session</tt></h1>
+    </center>
+    <hr>
+    <br>
+    <script>
+        class Test_Case1
+        {
+            m1()
+            {
+                document.write("This is Test_Case1_Class"+"<hr>")
+            }
+        }
+        class Test_Case2 extends Test_Case1 
+        {
+            m2()
+            {
+                document.write("This is Test_Case2_Class"+"<hr>")
+            }
+        }
+        class Test_Case3 extends Test_Case2 
+        {
+            m3()
+            {
+                document.write("This is Test_Case3_Class"+"<hr>")
+            }
+        }
+        var t1 = new Test_Case1()
+        t1.m1()
+        var t2 = new Test_Case2()
+        t2.m1()
+        t2.m2()
+        var t3 = new Test_Case3()
+        t3.m1()
+        t3.m2()
+        t3.m3()
+        
+     
+    </script>
+    
+</body>
+</html>
+
+
+->Hiechical Inheritance:
+===============
+
+Ex1:
+===
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JavaScript_Session</title>
+</head>
+<body>
+    <hr>
+    <center>
+        <h1><tt>JavaScript_Session</tt></h1>
+    </center>
+    <hr>
+    <br>
+    <script>
+        class Father_Class 
+        {
+            m1()
+            {
+                document.write("This is Father_Class"+"<hr>")
+            }
+        }
+        class Son1_Class extends Father_Class 
+        {
+            m2()
+            {
+                document.write("This is Son_1 class"+"<hr>")
+            }
+        }
+        class Son2_Class extends Father_Class 
+        {
+            m3()
+            {
+                document.write("This is Son_2 class"+"<hr>")
+            }
+        }
+        var f1 = new Father_Class()
+        f1.m1()
+        var s1 = new Son1_Class()
+        s1.m1()
+        s1.m2()
+        var s2 = new Son2_Class()
+        s2.m1()
+        s2.m3()
+
+    
+     
+
+     
+    </script>
+    
+</body>
+</html>
+
+Working on super() keyword:
+==================
+JavaScript supports super() keyword.The main Objective of super() keyword is to access
+the parent members in Child class.Members can be methods or variable.
+
+
+Ex1:
+===
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JavaScript_Session</title>
+</head>
+<body>
+    <hr>
+    <center>
+        <h1><tt>JavaScript_Session</tt></h1>
+    </center>
+    <hr>
+    <br>
+    <script>
+        class Vehical_Class 
+        {
+            constructor() 
+            {
+                this.Company="Honda"
+            }
+        }
+        class Bike_Class extends Vehical_Class 
+        {
+            constructor(name,price)
+            {
+                super()
+                this.name=name 
+                this.price=price
+            }
+        }
+
+        var b1 = new Bike_Class("S1_Version",134000)
+        document.write(b1.Company+" "+b1.name+" "+b1.price+"<hr>")
+
+
+
+    
+       
+    
+     
+
+     
+    </script>
+    
+</body>
+</html>
+
+
+Encupsulation:
+==========
+JavaScript supports Encupsulation.In JavaScript Encupsulation can be implemented
+using var keyword.
+
+Ex1:
+==
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JavaScript_Session</title>
+</head>
+<body>
+    <hr>
+    <center>
+        <h1><tt>JavaScript_Session</tt></h1>
+    </center>
+    <hr>
+    <br>
+    <script>
+        class Product_Details 
+        {
+            constructor()
+            {
+                var Pid 
+                var Pname 
+                var Price 
+                var Company
+
+            }
+            setPid(Pid)
+            {
+                this.Pid=Pid
+            }
+            getPid() 
+            {
+                return this.Pid
+            }
+            setPname(Pname)
+            {
+                this.Pname=Pname
+            }
+            getPname()
+            {
+                return this.Pname
+            }
+            setPrice(Price)
+            {
+                this.Price=Price
+            }
+            getPrice()
+            {
+               return this.Price
+            }
+            setCompany(Company)
+            {
+                this.Company=Company
+            }
+            getCompany()
+            {
+                return this.Company
+            }
+        }
+        var p1 = new Product_Details()
+        p1.setPid(1001)
+        p1.setPname("Mobile_1")
+        p1.setPrice(29000)
+        p1.setCompany("Samsung")
+        document.write(p1.getPid()+" "+p1.getPname()+" "+p1.getPrice()+" "+p1.getCompany())
+
+    
+    
+
+
+
+    
+       
+    
+     
+
+     
+    </script>
+    
+</body>
+</html>
+
+Prototypes in JavaScript:
+===============
+JavaScript supports Prototypes.In JavaScript Prottotypes are functions
+
+
+function User_details(username,p1,p2)
+{
+ ----
+}
+User_Details.prototype.FullAccess=function()
+{
+---
+}
+
+
+Ex1:
+===
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JavaScript_Session</title>
+</head>
+<body>
+    <hr>
+    <center>
+        <h1><tt>JavaScript_Session</tt></h1>
+    </center>
+    <hr>
+    <br>
+    <script>
+        function User_Details(username,P1,P2)
+        {
+            this.username=username 
+            this.P1=P1 
+            this.P2=P2 
+        }
+        User_Details.prototype.FullAccess=function()
+        {
+            return this.username+" "+this.P1+" "+this.P2
+        }
+        var u1= new User_Details("jessica_12345","JA_12345","JA_12345")
+        document.write(u1.username+" "+u1.P1+" "+" "+u1.P2)
+
+       
+   
+
+    
+
+    </script>
+    
+</body>
+</html>
+
+

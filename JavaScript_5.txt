@@ -1,0 +1,505 @@
+->Rest Parameter in JavaScript:
+===============================
+JavaScript supports Rest Parameter.It can be define or declare using ... followed 
+by variable_name.The main objective of Rest parameter is to read zero or more than one
+number of argument and perform the operations as per the application reqn.
+
+
+Ex1:
+===
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JavaScript_Session</title>
+</head>
+<body>
+    <center>
+    <hr>
+    <h1><tt>JavaScript_Session</tt></h1>
+    <hr>
+    </center>
+    <br>
+    <script>
+        function Test_Case1(...obj1)
+        {
+            document.write(obj1+"<hr>")
+        }
+        Test_Case1()
+        Test_Case1(1)
+        Test_Case1(1,2)
+        Test_Case1(1,2,3)
+        Test_Case1(1,2,3,4)
+        Test_Case1(1,2,3,4,5)
+    </script>
+    
+</body>
+</html>
+
+
+Ex2:
+===
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JavaScript_Session</title>
+</head>
+<body>
+    <center>
+    <hr>
+    <h1><tt>JavaScript_Session</tt></h1>
+    <hr>
+    </center>
+    <br>
+    <script>
+        function Test_Case1(...obj1)
+        {
+            S1=0 
+            for(var a=0;a<obj1.length;a++)
+        {
+            S1=S1+obj1[a]
+        }
+        document.write("Sum of each function is:",S1+"<hr>")
+            
+        }
+        Test_Case1()
+        Test_Case1(1)
+        Test_Case1(1,2)
+        Test_Case1(1,2,3)
+        Test_Case1(1,2,3,4)
+        Test_Case1(1,2,3,4,5)
+    </script>
+    
+</body>
+</html>
+
+In JavaScript we can write the function in Following ways
+
+->Using name_full function
+->Using name_less function
+->Using arrow function(=>)
+
+->Using name_full function:
+==========================
+
+Ex1:
+===
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JavaScript_Session</title>
+</head>
+<body>
+    <center>
+    <hr>
+    <h1><tt>JavaScript_Session</tt></h1>
+    <hr>
+    </center>
+    <br>
+     <script>
+        function Test_Case1()
+        {
+            document.write("This is Name_Full Function in JS ...")
+            document.write("<hr>")
+        }
+        Test_Case1()
+     </script>
+    
+    
+</body>
+</html>
+
+
+->Using name_less function:
+===========================
+
+Ex1:
+===
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JavaScript_Session</title>
+</head>
+<body>
+    <center>
+    <hr>
+    <h1><tt>JavaScript_Session</tt></h1>
+    <hr>
+    </center>
+    <br>
+     <script>
+        var Test_Case1 = function()
+        {
+            document.write("This is Name_Less Function in JS ...")
+            document.write("<hr>")
+        }
+        Test_Case1()
+     </script>
+    
+    
+</body>
+</html>
+
+->Using arrow function:
+========================
+
+Ex1:
+===
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JavaScript_Session</title>
+</head>
+<body>
+    <center>
+    <hr>
+    <h1><tt>JavaScript_Session</tt></h1>
+    <hr>
+    </center>
+    <br>
+     <script>
+        var Test_Case1 = ()=>
+        {
+            document.write("This is arrow_function in JS ...")
+            document.write("<hr>")
+        }
+        Test_Case1()
+     </script>
+    
+    
+</body>
+</html>
+
+While working with function in JavaScript we do have two types variables 
+=========================================================================
+->global variable
+->local variable
+
+
+->global variable:
+============
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JavaScript_Session</title>
+</head>
+<body>
+    <center>
+    <hr>
+    <h1><tt>JavaScript_Session</tt></h1>
+    <hr>
+    </center>
+    <br>
+     <script>
+
+        var ages=[17,18,19,20,21,22,23,24,25]
+        function Test_Case1()
+        {
+            document.write(ages[0]+"<hr>")
+        }
+        function Test_Case2()
+        {
+            document.write(ages[1]+"<hr>")
+        }
+        function Test_Case3() 
+        {
+            document.write(ages[2])
+        }
+        Test_Case1()
+        Test_Case2()
+        Test_Case3()
+      
+     </script>
+    
+    
+</body>
+</html>
+
+
+->local variable:
+================
+
+Ex1:
+==
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JavaScript_Session</title>
+</head>
+<body>
+    <center>
+    <hr>
+    <h1><tt>JavaScript_Session</tt></h1>
+    <hr>
+    </center>
+    <br>
+     <script>
+        function Test_Case1() 
+        {
+            let Products_Info=[1001,"Mobile_1",23000.0,"Samsung"]
+            document.write(Products_Info)
+        }
+        Test_Case1()
+
+      
+      
+     </script>
+    
+    
+</body>
+</html>
+
+
+Ex2:
+===
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JavaScript_Session</title>
+</head>
+<body>
+    <center>
+    <hr>
+    <h1><tt>JavaScript_Session</tt></h1>
+    <hr>
+    </center>
+    <br>
+     <script>
+        function Test_Case1() 
+        {
+            let Products_Info=[1001,"Mobile_1",23000.0,"Samsung"]
+            document.write(Products_Info+"<hr>")
+        }
+        function Test_Case2() 
+        {
+            document.write(Products_Info)
+        }
+        Test_Case1()
+        Test_Case2()
+
+      
+      
+     </script>
+    
+    
+</body>
+</html>
+
+
+closures in JavaScript:
+=======================
+JavaScript supports closures.It is also known as nested function/inner function.Nested function
+or Inner function can be represent as if we are define or declare a function inside another function
+then it is said to be closures or inner function.
+
+
+function Function_Name1():
+             ----
+             function Funtion_Name2():
+                         ---
+            Function_Name2()
+if(__name__=="__main__"):
+          Function_Name1()
+
+
+Ex1:
+===
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JavaScript_Session</title>
+</head>
+<body>
+    <center>
+    <hr>
+    <h1><tt>JavaScript_Session</tt></h1>
+    <hr>
+    </center>
+    <br>
+     <script>
+        function Test_Case1()
+        {
+            document.write("This is Outer_Function")
+            document.write("<hr>")
+            function Test_Case2()
+            {
+                document.write("This is Inner_Function")
+               
+            }
+            Test_Case2()
+        }
+        Test_Case1()
+    
+      
+      
+     </script>
+    
+    
+</body>
+</html>
+
+
+Control statements in JavaScript:
+================================
+->if statement
+->nested if statement
+->if else statement
+->if else if else statement
+->for loop 
+->for in loop
+->forEach loop
+->while loop
+->nested while loop 
+->do while loop
+->break
+->continue
+->switch statement
+
+
+->if statement:
+===============
+
+Ex1:
+===
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JavaScript_Session</title>
+</head>
+<body>
+    <center>
+    <hr>
+    <h1><tt>JavaScript_Session</tt></h1>
+    <hr>
+    </center>
+    <br>
+     <script>
+        var language=window.prompt("Enter the Language:")
+        if(language=="JavaScript")
+     {
+        document.write(language+" "+":Meant for Client_Side Validation")
+        document.write("<hr>")
+     }
+  
+    
+      
+      
+     </script>
+    
+    
+</body>
+</html>
+
+
+->Nested if statement/Inner if statement:
+========================================
+Ex1:
+===
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JavaScript_Session</title>
+</head>
+<body>
+    <center>
+    <hr>
+    <h1><tt>JavaScript_Session</tt></h1>
+    <hr>
+    </center>
+    <br>
+     <script>
+        var name=window.prompt('Enter the name:')
+        var dob=window.prompt('Enter the DOB:')
+        if(name=="Jessica_1")
+     {
+        document.write("Name is:"+name+"<hr>")
+        if(dob=="19/12/1999")
+             {
+                document.write("DOB is:"+dob)
+                 
+                
+             }
+     }
+ 
+      
+      
+     </script>
+    
+    
+</body>
+</html>
+
+if else:
+=======
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JavaScript_Session</title>
+</head>
+<body>
+    <center>
+    <hr>
+    <h1><tt>JavaScript_Session</tt></h1>
+    <hr>
+    </center>
+    <br>
+     <script>
+        var number_1=Number(window.prompt("Enter the any_number:"))
+    if(number_1%2==0)
+     {
+        document.write(number_1+" "+" : Even_Number"+"<hr>")
+     }
+     else 
+     {
+        document.write(number_1+" "+": Odd_Number"+"<hr>")
+     }
+    
+      
+      
+     </script>
+    
+    
+</body>
+</html>
+
+
+if else if else:
+========
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

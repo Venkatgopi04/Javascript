@@ -1,0 +1,164 @@
+Checkbox validation in JavaScript:
+=================================
+
+Ex1:
+===
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JavaScript_Session</title>
+</head>
+<body>
+    <hr>
+    <center>
+        <h1><tt>JavaScript_Session</tt></h1>
+    </center>
+    <hr>
+    <br>
+    <fieldset>
+        <legend>Checkbox_Validation</legend>
+        <center>
+            <form action="" method="post" onsubmit="return Test_Case1()">
+                <table border="3">
+                    <tr>
+                        <td><label for="">Languages</label></td>
+                          <td>
+                            <input type="checkbox" name="language" value="javascript">
+                            <label for="">Javascript</label>
+                            <input type="checkbox" name="language" value="python">
+                            <label for="">Python</label>
+                            <input type="checkbox" name="language" value="sql">
+                            <label for="">SQL/PLSQL</label>
+                        
+                        </td>
+                        <td><span id="XYZ"></span></td>
+
+                    </tr>
+                    <tr>
+                    <td></td>
+                    <td><input type="submit" value="SUBMIT"></td>
+                    </tr>
+
+                </table>
+
+            </form>
+        </center>
+    </fieldset>
+    <script>
+        function Test_Case1()
+        {
+            var language_1=document.getElementsByName("language")
+            if(language_1[0].checked==false && language_1[1].checked==false && language_1[2].checked==false)
+        {
+              window.alert("Select at least one language")
+              document.getElementById("XYZ").innerHTML="*** Select at least one language ***"
+              return false
+        }
+        }
+    </script>
+    
+</body>
+</html>
+
+
+select tag validation in JavaScript:
+====================================
+
+Ex1:
+===
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JavaScript_Session</title>
+</head>
+<body>
+    <hr>
+    <center>
+        <h1><tt>JavaScript_Session</tt></h1>
+    </center>
+    <hr>
+    <br>
+    <fieldset>
+        <legend>Select_Validation</legend>
+        <center>
+            <form action="" method="post" onsubmit="return Test_Case1()">
+                <table border="3">
+                    <tr>
+                        <td><label for="">City-State-Country</label></td>
+                        <td>
+                            <select name="" id="A">
+                                <option value="">--City--</option>
+                                <option value="">Hyderabad</option>
+                                <option value="">Mumbai</option>
+                                <option value="">Banguluru</option>
+                                <option value="">Delhi</option>
+                            </select>
+                            <select name="" id="B">
+                                <option value="">--State--</option>
+                                <option value="">TG</option>
+                                <option value="">MH</option>
+                                <option value="">KA</option>
+                                <option value="">WB</option>
+                            </select>
+                            <select name="" id="C">
+                                <option value="">--Country--</option>
+                                <option value="">India</option>
+                                <option value="">USA</option>
+                                <option value="">UK</option>
+                                <option value="">AUS</option>
+                            </select>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td></td>
+                        <td><input type="submit" value="SUBMIT"></td>
+                    </tr>
+                    <tr>
+                        <td></td>
+                        <td><fieldset>
+                            <legend>Dynamic_Message</legend>
+                            <span id="xyz"></span>
+                        </fieldset></td>
+                    </tr>
+
+                </table>
+              
+
+            </form>
+        </center>
+    </fieldset>
+    <script>
+        function Test_Case1()
+        {
+          var select_1=document.getElementById("A") 
+          var select_2=document.getElementById("B")
+          var select_3=document.getElementById("C")
+          if(select_1.selectedIndex=="")
+          {
+            window.alert("Dear User please enter the city ...")
+            document.getElementById('xyz').innerHTML="*** City is required ***"
+            return false
+          }
+          else if(select_2.selectedIndex=="")
+          {
+            window.alert("Dear User please enter the state ...")
+            document.getElementById('xyz').innerHTML="*** State is required ***"
+            return false
+          }
+          else if(select_3.selectedIndex=="")
+          {
+            window.alert("Dear User please enter the country ...")
+            document.getElementById('xyz').innerHTML="*** Country is required ***"
+            return false
+          }
+          
+
+        }
+    </script>
+    
+</body>
+</html>

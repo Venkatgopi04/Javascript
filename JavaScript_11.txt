@@ -1,0 +1,441 @@
+Events in JavaScript:
+=====================
+->onclick() event
+->onsubmit() event
+
+
+->onclick() event:
+==================
+onlick() is a JavaScript event meant for button validation which can be return inside the
+input tag.
+
+Ex1:
+==
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JavaScript_Session</title>
+</head>
+<body>
+    <hr>
+    <h1><tt>JavaScript_Session</tt></h1>
+    <hr>
+    <br>
+    <hr>
+    <fieldset>
+        <legend>JavaScript</legend>
+        <center>
+            <form action="" method="post">
+                <input type="submit" value="IHUB_1" onclick="Test_Case1()">
+            </form>
+        </center>
+    </fieldset>
+    <hr>
+    <script>
+        function Test_Case1()
+        {
+            window.alert("This onclick event meant for button validation")
+        }
+    </script>
+    
+</body>
+</html>
+
+
+->onsubmit() event:
+====================
+onsubmit() is a javascript event meant for complete form validation.onsubmit() event return 
+inside the form tag
+
+
+
+Ex1:
+==
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JavaScript_Session</title>
+</head>
+<body>
+    <hr>
+    <h1><tt>JavaScript_Session</tt></h1>
+    <hr>
+    <br>
+    <hr>
+    <fieldset>
+        <legend>JavaScript</legend>
+        <center>
+            <form action="" onsubmit="return Test_Case1()" method="post">
+                <input type="submit" value="IHUB_1">
+            </form>
+        </center>
+    </fieldset>
+    <hr>
+    <script>
+        function Test_Case1()
+        {
+            window.alert("This onclick event meant for button validation")
+            return false
+        }
+    </script>
+    
+</body>
+</html>
+
+DOM in JavaScript:
+====================
+JavaScript supports DOM which stands for Document Object Model.The main objective of 
+DOM is how to represent Dynamic content as per the application reqn.
+
+D ---->Document ---->.html,.css,.js,.ts
+O ---->Object   ---->All HTML & HTML5 tags act as a object in JavaScript
+M ---->Model  ---->How to represent Dynamic Content on the web page.
+
+DOM provides following methods which as follows:
+===============================================
+->document.write()
+->document.writeln()
+->document.getElementById()
+->document.getElementsByName()
+->document.getElementsByTagName()
+->document.getElementsByClassName()
+
+
+->document.getElementById():
+============================
+It is a DOM method.The main objective of this method is read the end_user details as
+per the application reqn by passing Id.
+
+Ex1:
+===
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JavaScript_Session</title>
+</head>
+<body>
+    <hr>
+    <h1><tt>JavaScript_Session</tt></h1>
+    <hr>
+    <br>
+    <hr>
+    <fieldset>
+        <legend>JavaScript</legend>
+        <center>
+            <form action="" method="post">
+                <table border="5">
+                    <tr>
+                        <td>Username</td>
+                        <td><input type="text" placeholder="username" id="A" autocomplete="off"></td>
+                    </tr>
+                    <tr>
+                        <td></td>
+                        <td><input type="submit" value="IHUB_12345" onclick="Test_Case1()"></td>
+                    </tr>
+
+                </table>
+            </form>
+           
+        </center>
+    </fieldset>
+    <hr>
+    <script>
+        function Test_Case1()
+        {
+            var user_1=document.getElementById("A").value
+            window.alert("Username is:"+user_1)
+        }
+    </script>
+    
+</body>
+</html>
+
+
+Ex2:
+===
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JavaScript_Session</title>
+</head>
+<body>
+    <hr>
+    <h1><tt>JavaScript_Session</tt></h1>
+    <hr>
+    <br>
+    <hr>
+    <fieldset>
+        <legend>JavaScript</legend>
+        <center>
+            <form action="" onsubmit="return Test_Case1()" method="post">
+                <table border="5">
+                    <tr>
+                        <td>Username</td>
+                        <td><input type="text" placeholder="username" id="A" autocomplete="off"></td>
+                    </tr>
+                    <tr>
+                        <td></td>
+                        <td><input type="submit" value="IHUB_12345"></td>
+                    </tr>
+
+                </table>
+            </form>
+           
+        </center>
+    </fieldset>
+    <hr>
+    <script>
+        function Test_Case1()
+        {
+            var user_1=document.getElementById("A").value
+            window.alert("Username is:"+user_1)
+            return false
+        }
+    </script>
+    
+</body>
+</html>
+
+
+Ex3:
+===
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JavaScript_Session</title>
+</head>
+<body>
+    <hr>
+    <h1><tt>JavaScript_Session</tt></h1>
+    <hr>
+    <br>
+    <hr>
+    <fieldset>
+        <legend>JavaScript</legend>
+        <center>
+            <form action="" onsubmit="return Test_Case1()" method="post">
+                <table border="5">
+                    <tr>
+                        <td><label for="">Enter the Number_1</label></td>
+                        <td><input type="text" placeholder="Number_1" id="A" autocomplete="off"></td>
+
+                    </tr>
+                    <tr>
+                        <td><label for="">Enter the Number_2</label></td>
+                        <td><input type="text" placeholder="Number_2" id="B" autocomplete="off"></td>
+
+                    </tr>
+                    <tr>
+                        <td><label for="">Result_set</label></td>
+                        <td><input type="text" placeholder="Ressult here" id="C" autocomplete="off"></td>
+
+                    </tr>
+                    <tr>
+                        <td></td>
+                        <td><input type="submit" value="ADDITION"></td>
+                    </tr>
+                
+
+                </table>
+            </form>
+           
+        </center>
+    </fieldset>
+    <hr>
+    <script>
+        function Test_Case1()
+        {
+            var a = document.getElementById("A").value 
+            var b = document.getElementById("B").value 
+            var res1=a+b 
+            document.getElementById("C").value=res1 
+            return false
+
+
+        }
+    </script>
+    
+</body>
+</html>
+
+
+Ex4:
+===
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JavaScript_Session</title>
+</head>
+<body>
+    <hr>
+    <h1><tt>JavaScript_Session</tt></h1>
+    <hr>
+    <br>
+    <hr>
+    <fieldset>
+        <legend>JavaScript</legend>
+        <center>
+            <form action="" onsubmit="return Test_Case1()" method="post">
+                <table border="5">
+                    <tr>
+                        <td><label for="">Enter the Number_1</label></td>
+                        <td><input type="text" placeholder="Number_1" id="A" autocomplete="off"></td>
+
+                    </tr>
+                    <tr>
+                        <td><label for="">Enter the Number_2</label></td>
+                        <td><input type="text" placeholder="Number_2" id="B" autocomplete="off"></td>
+
+                    </tr>
+                    <tr>
+                        <td><label for="">Result_set</label></td>
+                        <td><input type="text" placeholder="Ressult here" id="C" autocomplete="off"></td>
+
+                    </tr>
+                    <tr>
+                        <td></td>
+                        <td><input type="submit" value="ADDITION"></td>
+                    </tr>
+                
+
+                </table>
+            </form>
+           
+        </center>
+    </fieldset>
+    <hr>
+    <script>
+        function Test_Case1()
+        {
+            var a = Number(document.getElementById("A").value)
+            var b = Number(document.getElementById("B").value)
+            var res1=a+b 
+            document.getElementById("C").value=res1 
+            return false
+
+
+        }
+    </script>
+    
+</body>
+</html>
+
+
+.innerHTML:
+============
+It is used to display the dynamic content on web.innerHTML is assocaited with document.getElementById()
+
+
+Ex1:
+===
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JavaScript_Session</title>
+</head>
+<body>
+    <hr>
+    <h1><tt>JavaScript_Session</tt></h1>
+    <hr>
+    <br>
+    <hr>
+    <fieldset>
+        <legend>JavaScript</legend>
+        <center>
+            <form action="" onsubmit="return Test_Case1()" method="post">
+                <table border="5">
+                    <tr>
+                        <td><input type="submit" value="LOGIN-HERE"></td>
+                    </tr>
+                   
+                
+
+                </table>
+            </form>
+            <br>
+            <hr>
+            <div id="ABCD"></div>
+           <hr>
+
+        
+           
+        </center>
+    </fieldset>
+    <hr>
+    <script>
+        function Test_Case1()
+        {
+
+            var data_1=`
+            <!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JavaScript_Session</title>
+</head>
+<body>
+    <hr>
+    <h1><tt>JavaScript_Session</tt></h1>
+    <hr>
+    <br>
+    <hr>
+    <fieldset>
+        <legend>JavaScript</legend>
+        <center>
+            <form action="" onsubmit="return Test_Case1()" method="post">
+                <table border="5">
+                    <tr>
+                        <td><label for="">Enter the Number_1</label></td>
+                        <td><input type="text" placeholder="Number_1" id="A" autocomplete="off"></td>
+
+                    </tr>
+                    <tr>
+                        <td><label for="">Enter the Number_2</label></td>
+                        <td><input type="text" placeholder="Number_2" id="B" autocomplete="off"></td>
+
+                    </tr>
+                    <tr>
+                        <td><label for="">Result_set</label></td>
+                        <td><input type="text" placeholder="Ressult here" id="C" autocomplete="off"></td>
+
+                    </tr>
+                    <tr>
+                        <td></td>
+                        <td><input type="submit" value="ADDITION"></td>
+                    </tr>
+                
+
+                </table>
+            </form>
+           
+        </center>
+    </fieldset>
+    <hr>
+  
+    
+</body>
+</html> `
+document.getElementById("ABCD").innerHTML=data_1 
+return false
+         
+
+}
+    </script>
+    
+</body>
+</html>

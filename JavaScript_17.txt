@@ -1,0 +1,66 @@
+Polymorpshism in JavaScript:
+==================
+
+Ex1:
+==
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JavaScript_Session</title>
+</head>
+<body>
+    <hr>
+    <center>
+        <h1><tt>JavaScript_Session</tt></h1>
+    </center>
+    <hr>
+    <script>
+        class A_class 
+        {
+            m1()
+            {
+                document.write("This is A_class")
+                document.write("<hr>")
+            }
+        }
+        class B_class extends A_class 
+        {
+            m1()
+            {
+             document.write("This is B_class")
+             document.write("<hr>")
+            }
+        }
+        class C_class extends B_class 
+        {
+            m1()
+            {
+                document.write("This is C_class")
+                document.write("<hr>")
+            }
+        }
+        class D_class extends C_class 
+        {
+            m1()
+            {
+                document.write("This is D_class")
+                document.write("<hr>")
+            }
+        }
+        var obj1= [new A_class(),new B_class,new C_class(),new D_class()]
+        obj1.forEach(function(X1){
+            X1.m1()
+        })
+        
+    </script>
+
+    
+</body>
+</html>
+
+
+
+Interview_Questions for JavaScript:
+======================
